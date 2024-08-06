@@ -1,0 +1,13 @@
+.flexbox {
+  --display: flex;
+  --align-items: center;
+  --justify-content: flex-start;
+  --align-content: stretch;
+  --position: relative;
+
+  display: var(--display, flex);
+  align-items: var(--align-items, center);
+  justify-content: var(--justify-content, flex-start);
+  align-content: var(--align-content, stretch);
+  position: var(--position, relative);
+}

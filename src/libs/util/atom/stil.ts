@@ -8,6 +8,7 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     Array.isArray(obiect.padding) ? obiect.padding : [obiect.padding]
   ) as number[];
 
+  // padding
   const padding = obiect.padding
     ? paddingList
         .slice(0, 4)
@@ -15,20 +16,27 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
         .join(' ')
     : '';
 
+  // fontSize
   const fontSize = obiect.fontSize ? `${Number(obiect.fontSize) / 16}rem` : '';
 
+  // display
   const display = obiect.display ? `${obiect.display}` : '';
 
+  // alignItems
   const alignItems = obiect.alignItems ? `${obiect.alignItems}` : '';
 
+  // justifyContent
   const justifyContent = obiect.justifyContent
     ? `${obiect.justifyContent}`
     : '';
 
+  // alignContent
   const alignContent = obiect.alignContent ? `${obiect.alignContent}` : '';
 
+  // position
   const position = obiect.position ? `${obiect.position}` : '';
 
+  // gap
   const gapList = (
     Array.isArray(obiect.gap) ? obiect.gap : [obiect.gap]
   ) as number[];
@@ -40,30 +48,29 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
         .join(' ')
     : '';
 
+  // width
   const width = obiect.width ? `${obiect.width}px` : '';
 
+  // height
   const height = obiect.height ? `${obiect.height}px` : '';
 
+  // flexDirection
   const flexDirection = obiect.flexDirection ? `${obiect.flexDirection}` : '';
 
+  // flexWrap
   const flexWrap = obiect.flexWrap ? `${obiect.flexWrap}` : '';
 
-  const borderRadius = () => {
-    const unit = obiect.borderRadiusUnit || 'px';
-    if (obiect.borderRadius) {
-      if (typeof obiect.borderRadius === 'string') {
-        return obiect.borderRadius;
-      }
-      if (Array.isArray(obiect.borderRadius)) {
-        return (obiect.borderRadius as number[])
-          .map((value) => `${value}${unit}`)
-          .join(' ');
-      }
-      if (typeof obiect.borderRadius === 'number') {
-        return `${obiect.borderRadius}${unit}`;
-      }
+  // border
+  const border = () => {
+    if (typeof obiect.border === 'string') {
+      return obiect.border;
     }
     return '';
+  };
+
+  // borderRadius
+  const borderRadius = () => {
+    return typeof obiect.borderRadius === 'string' ? obiect.borderRadius : '';
   };
 
   return {
@@ -77,8 +84,9 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--gap': gap,
     '--width': width,
     '--height': height,
-    'flex-direction': flexDirection,
-    'flex-wrap': flexWrap,
-    'border-radius': borderRadius(),
+    '--flex-direction': flexDirection,
+    '--flex-wrap': flexWrap,
+    '--border-radius': borderRadius(),
+    '--border': border(),
   };
 };

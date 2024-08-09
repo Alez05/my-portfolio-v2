@@ -23,24 +23,26 @@ export default function Home() {
         padding={[20, 40, 60, 80]}
         gap={10}
         fontSize={30}
-        flexDirection='row-reverse'
-        borderRadius={20}
+        flexDirection='row'
+        border='2px solid red'
+        borderRadius='40px'
       >
-        <h1>fffff1</h1>
-        <h1>ffffff2</h1>
-        <h1>fffffff33</h1>
+        <h1>oumaima</h1>
+        <h1>elif</h1>
+        <h1>alex</h1>
       </FlexBox>
       <FlexBox
         padding={[20, 40, 60, 80]}
         gap={10}
         fontSize={30}
-        flexDirection='row-reverse'
-        borderRadius={20}
+        flexDirection='row'
+        border='2px solid red'
+        borderRadius='30%'
         borderRadiusUnit='%'
       >
-        <h1>fffff1</h1>
-        <h1>ffffff2</h1>
-        <h1>fffffff33</h1>
+        <h1>oumaima</h1>
+        <h1>elif</h1>
+        <h1>alex</h1>
       </FlexBox>
     </main>
   );

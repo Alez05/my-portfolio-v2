@@ -14,5 +14,5 @@ interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
   flexWrap?: string;
   borderRadius?: number | number[] | string;
   borderRadiusUnit?: 'px' | '%';
-  border?: number | string;
+  border?: string;
 }

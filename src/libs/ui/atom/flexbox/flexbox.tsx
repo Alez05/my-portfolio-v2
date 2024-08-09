@@ -8,6 +8,15 @@ const FlexBox = ({
   justifyContent = 'unset',
   alignContent = 'unset',
   position = 'unset',
+  padding = 0,
+  gap = 0,
+  fontSize = 16,
+  width = 0,
+  height = 0,
+  flexDirection = 'row',
+  flexWrap = 'nowrap',
+  borderRadius = 0,
+  borderRadiusUnit = 'px',
 }: TFlexBox) => {
   const stil = getStil({
     display,
@@ -15,6 +24,15 @@ const FlexBox = ({
     justifyContent,
     alignContent,
     position,
+    padding,
+    gap,
+    fontSize,
+    width,
+    height,
+    flexDirection,
+    flexWrap,
+    borderRadius,
+    borderRadiusUnit,
   }) as React.CSSProperties;
   return (
     <div

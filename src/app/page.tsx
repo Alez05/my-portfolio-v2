@@ -20,15 +20,27 @@ export default function Home() {
       <Button />
 
       <FlexBox
-        display='flex'
-        alignItems='center'
-        justifyContent='space-between'
-        alignContent='center'
-        position='absolute'
+        padding={[20, 40, 60, 80]}
+        gap={10}
+        fontSize={30}
+        flexDirection='row-reverse'
+        borderRadius={20}
       >
-        <h1>alex</h1>
-        <h1>oumaima</h1>
-        <h1>oumaimabouchiba</h1>
+        <h1>fffff1</h1>
+        <h1>ffffff2</h1>
+        <h1>fffffff33</h1>
+      </FlexBox>
+      <FlexBox
+        padding={[20, 40, 60, 80]}
+        gap={10}
+        fontSize={30}
+        flexDirection='row-reverse'
+        borderRadius={20}
+        borderRadiusUnit='%'
+      >
+        <h1>fffff1</h1>
+        <h1>ffffff2</h1>
+        <h1>fffffff33</h1>
       </FlexBox>
     </main>
   );

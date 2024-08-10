@@ -49,10 +49,20 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     : '';
 
   // width
-  const width = obiect.width ? `${obiect.width}px` : '';
+  const width = () => {
+    if (typeof obiect.width === 'string' && obiect.width.includes('%')) {
+      return obiect.width;
+    }
+    return '';
+  };
 
   // height
-  const height = obiect.height ? `${obiect.height}px` : '';
+  const height = () => {
+    if (typeof obiect.height === 'string' && obiect.height.includes('%')) {
+      return obiect.height;
+    }
+    return '';
+  };
 
   // flexDirection
   const flexDirection = obiect.flexDirection ? `${obiect.flexDirection}` : '';
@@ -82,8 +92,8 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--align-content': alignContent,
     '--position': position,
     '--gap': gap,
-    '--width': width,
-    '--height': height,
+    '--width': width(),
+    '--height': height(),
     '--flex-direction': flexDirection,
     '--flex-wrap': flexWrap,
     '--border-radius': borderRadius(),

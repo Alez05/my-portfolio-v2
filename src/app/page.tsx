@@ -26,6 +26,8 @@ export default function Home() {
         flexDirection='row'
         border='2px solid red'
         borderRadius='40px'
+        height='40%'
+        width='40%'
       >
         <h1>oumaima</h1>
         <h1>elif</h1>

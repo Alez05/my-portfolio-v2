@@ -28,6 +28,7 @@ export default function Home() {
         borderRadius='40px'
         height='40%'
         width='40%'
+        color='var(--color-danger)'
       >
         <h1>oumaima</h1>
         <h1>elif</h1>
@@ -41,6 +42,9 @@ export default function Home() {
         border='2px solid red'
         borderRadius='30%'
         borderRadiusUnit='%'
+        height='40px'
+        width='40px'
+        color='var(--color-lavender)'
       >
         <h1>oumaima</h1>
         <h1>elif</h1>

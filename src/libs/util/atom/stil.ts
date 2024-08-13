@@ -1,9 +1,14 @@
+import { get } from 'http';
+
 interface stilOptions {
   borderRadiusUnit?: 'px' | '%';
   unit?: 'px' | 'rem';
 }
 
 export const getStil = (obiect: Record<string, string | number | number[]>) => {
+  console.log(getStil);
+  console.log('getStil');
+
   const paddingList = (
     Array.isArray(obiect.padding) ? obiect.padding : [obiect.padding]
   ) as number[];
@@ -50,16 +55,20 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
 
   // width
   const width = () => {
-    if (typeof obiect.width === 'string' && obiect.width.includes('%')) {
+    if (typeof obiect.width === 'string') {
       return obiect.width;
+    } else if (typeof obiect.width === 'number') {
+      return `${obiect.width}px`;
     }
     return '';
   };
 
   // height
   const height = () => {
-    if (typeof obiect.height === 'string' && obiect.height.includes('%')) {
+    if (typeof obiect.height === 'string') {
       return obiect.height;
+    } else if (typeof obiect.height === 'number') {
+      return `${obiect.height}px`;
     }
     return '';
   };
@@ -83,6 +92,10 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     return typeof obiect.borderRadius === 'string' ? obiect.borderRadius : '';
   };
 
+  // color
+
+  const color = typeof obiect.color === 'string' ? obiect.color : '';
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -98,5 +111,6 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--flex-wrap': flexWrap,
     '--border-radius': borderRadius(),
     '--border': border(),
+    '--color': color,
   };
 };

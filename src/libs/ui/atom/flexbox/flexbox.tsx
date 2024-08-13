@@ -18,6 +18,7 @@ const FlexBox = ({
   borderRadius = 0,
   borderRadiusUnit = 'px',
   border = 'unset',
+  color = 'unset',
 }: TFlexBox) => {
   const stil = getStil({
     display,
@@ -35,6 +36,7 @@ const FlexBox = ({
     borderRadius,
     borderRadiusUnit,
     border,
+    color,
   }) as React.CSSProperties;
   return (
     <div

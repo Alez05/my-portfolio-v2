@@ -13,6 +13,7 @@
   --flex-wrap: nowrap;
   --border-radius: 0;
   --border: 0;
+  --color: red;
 
   display: var(--display, flex);
   align-items: var(--align-items, center);
@@ -28,4 +29,5 @@
   flex-wrap: var(--flex-wrap, nowrap);
   border-radius: var(--border-radius, 0);
   border: var(--border, 0);
+  color: var(--color, black);
 }

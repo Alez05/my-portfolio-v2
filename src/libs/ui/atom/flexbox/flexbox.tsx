@@ -20,6 +20,9 @@ const FlexBox = ({
   border = 'unset',
   color = 'unset',
   bgc = 'unset',
+  cursor = 'unset',
+  inset = 0,
+  float = 'unset',
 }: TFlexBox) => {
   const stil = getStil({
     display,
@@ -39,6 +42,9 @@ const FlexBox = ({
     border,
     color,
     bgc,
+    cursor,
+    inset,
+    float,
   }) as React.CSSProperties;
   return (
     <div

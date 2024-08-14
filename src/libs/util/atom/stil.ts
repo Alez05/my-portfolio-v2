@@ -93,12 +93,27 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
   };
 
   // color
-
   const color = typeof obiect.color === 'string' ? obiect.color : '';
 
   // bgc
-
   const bgc = typeof obiect.bgc === 'string' ? obiect.bgc : '';
+
+  //cursor
+  const cursor = typeof obiect.cursor === 'string' ? obiect.cursor : '';
+
+  //inset
+  const insetList = (
+    Array.isArray(obiect.inset) ? obiect.inset : [obiect.inset]
+  ) as number[];
+
+  const inset = insetList
+    .filter((n: number) => typeof n === 'number')
+    .slice(0, 4)
+    .map((n: number) => `${n / 16}rem`)
+    .join(' ');
+
+  // float
+  const float = typeof obiect.float === 'string' ? obiect.float : '';
 
   return {
     '--padding': padding,
@@ -117,5 +132,8 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--border': border(),
     '--color': color,
     '--background-color': bgc,
+    '--cursor': cursor,
+    '--inset': inset,
+    '--float': float,
   };
 };

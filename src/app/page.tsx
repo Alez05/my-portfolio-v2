@@ -30,6 +30,7 @@ export default function Home() {
         width='40%'
         color='var(--color-danger)'
         bgc='#03a9f4'
+        cursor='grab'
       >
         <h1>oumaima</h1>
         <h1>elif</h1>
@@ -47,6 +48,8 @@ export default function Home() {
         width='40px'
         color='var(--color-lavender)'
         bgc='var(--color-positive)'
+        cursor='text'
+        float='right'
       >
         <h1>oumaima</h1>
         <h1>elif</h1>

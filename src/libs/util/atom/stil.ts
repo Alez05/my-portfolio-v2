@@ -96,6 +96,10 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
 
   const color = typeof obiect.color === 'string' ? obiect.color : '';
 
+  // bgc
+
+  const bgc = typeof obiect.bgc === 'string' ? obiect.bgc : '';
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -112,5 +116,6 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--border-radius': borderRadius(),
     '--border': border(),
     '--color': color,
+    '--background-color': bgc,
   };
 };

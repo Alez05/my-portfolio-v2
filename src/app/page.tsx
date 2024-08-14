@@ -29,6 +29,7 @@ export default function Home() {
         height='40%'
         width='40%'
         color='var(--color-danger)'
+        bgc='#03a9f4'
       >
         <h1>oumaima</h1>
         <h1>elif</h1>
@@ -45,6 +46,7 @@ export default function Home() {
         height='40px'
         width='40px'
         color='var(--color-lavender)'
+        bgc='var(--color-positive)'
       >
         <h1>oumaima</h1>
         <h1>elif</h1>

@@ -1,0 +1,30 @@
+/* gridbox.css */
+.gridbox {
+  --display: grid;
+  --grid-template-columns: none;
+  --grid-template-rows: none;
+  --grid-gap: 0;
+  --justify-items: stretch;
+  --align-items: stretch;
+  --justify-content: stretch;
+  --align-content: stretch;
+  --grid-auto-flow: row;
+  --grid-auto-columns: auto;
+  --grid-auto-rows: auto;
+  --place-items: unset;
+  --place-content: unset;
+
+  display: var(--display, grid);
+  grid-template-columns: var(--grid-template-columns, none);
+  grid-template-rows: var(--grid-template-rows, none);
+  gap: var(--grid-gap, 0);
+  justify-items: var(--justify-items, stretch);
+  align-items: var(--align-items, stretch);
+  justify-content: var(--justify-content, stretch);
+  align-content: var(--align-content, stretch);
+  grid-auto-flow: var(--grid-auto-flow, row);
+  grid-auto-columns: var(--grid-auto-columns, auto);
+  grid-auto-rows: var(--grid-auto-rows, auto);
+  place-items: var(--place-items, unset);
+  place-content: var(--place-content, unset);
+}

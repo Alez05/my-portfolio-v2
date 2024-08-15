@@ -1,4 +1,4 @@
-import { Button, FlexBox } from '@/libs/ui';
+import { Button, FlexBox, GridBox } from '@/libs/ui';
 
 export default function Home() {
   return (
@@ -18,11 +18,18 @@ export default function Home() {
         fontSize={50}
       />
       <Button />
-
+      <GridBox
+        gridTemplateColumns='1fr 1fr 1fr'
+        gridGap={40}
+      >
+        <h1>alex</h1>
+        <h1>oumaima</h1>
+        <h1>alex oumaima elif</h1>
+      </GridBox>
       <FlexBox
         padding={[20, 40, 60, 80]}
         gap={10}
-        fontSize={30}
+        fontSize={50}
         flexDirection='row'
         border='2px solid red'
         borderRadius='40px'

@@ -1,5 +1,3 @@
-import { get } from 'http';
-
 interface stilOptions {
   borderRadiusUnit?: 'px' | '%';
   unit?: 'px' | 'rem';
@@ -22,7 +20,7 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     : '';
 
   // fontSize
-  const fontSize = obiect.fontSize ? `${Number(obiect.fontSize) / 16}rem` : '';
+  const fontSize = obiect?.fontSize ? `${Number(obiect.fontSize) / 16}rem` : '';
 
   // display
   const display = obiect.display ? `${obiect.display}` : '';
@@ -115,6 +113,40 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
   // float
   const float = typeof obiect.float === 'string' ? obiect.float : '';
 
+  // grid-template-columns
+  const gtc = () => {
+    if (Array.isArray(obiect.gtc)) {
+      return obiect.gtc.join(' ');
+    } else if (typeof obiect.gtc === 'string') {
+      return obiect.gtc;
+    }
+    return '';
+  };
+
+  // grid-template-rows
+  const gtr = () => {
+    if (Array.isArray(obiect.gtr)) {
+      return obiect.gtr.join(' ');
+    } else if (typeof obiect.gtr === 'string') {
+      return obiect.gtr;
+    }
+    return '';
+  };
+
+  // grid-gap
+  const gridGapList = (
+    Array.isArray(obiect.gridGap) ? obiect.gridGap : [obiect.gridGap]
+  ) as number[];
+
+  const gridGap = () => {
+    if (gridGapList.length === 1) {
+      return `${gridGapList[0] / 16}rem`;
+    } else if (gridGapList.length === 2) {
+      return `${gridGapList[0] / 16}rem ${gridGapList[1] / 16}rem`;
+    }
+    return '';
+  };
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -135,5 +167,8 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--cursor': cursor,
     '--inset': inset,
     '--float': float,
+    '--grid-template-columns': gtc(),
+    '--grid-template-rows': gtr(),
+    '--grid-gap': gridGap(),
   };
 };

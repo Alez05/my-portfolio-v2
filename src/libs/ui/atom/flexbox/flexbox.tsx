@@ -23,6 +23,7 @@ const FlexBox = ({
   cursor = '',
   inset = 0,
   float = '',
+  justifyItems = '',
 }: TFlexBox) => {
   const stil = getStil({
     display,
@@ -45,6 +46,7 @@ const FlexBox = ({
     cursor,
     inset,
     float,
+    justifyItems,
   }) as React.CSSProperties;
   return (
     <div

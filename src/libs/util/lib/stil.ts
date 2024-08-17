@@ -33,6 +33,9 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     ? `${obiect.justifyContent}`
     : '';
 
+  // justifyItems
+  const justifyItems = obiect.justifyItems ? `${obiect.justifyItems}` : '';
+
   // alignContent
   const alignContent = obiect.alignContent ? `${obiect.alignContent}` : '';
 
@@ -147,6 +150,24 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     return '';
   };
 
+  //grid-auto-flow
+  const gaf = obiect.gaf ? `${obiect.gaf}` : '';
+
+  // grid-auto-columns
+  const gac = obiect.gac ? `${obiect.gac}` : '';
+
+  // grid-auto-rows
+  const gar = obiect.gar ? `${obiect.gar}` : '';
+
+  // place-items
+  const placeItems = obiect.placeITems ? `${obiect.placeItems}` : '';
+
+  // place-content
+  const placeContent = obiect.placeContent ? `${obiect.placeContent}` : '';
+
+  // button type
+  const type = obiect.type ? `${obiect.type}` : '';
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -167,8 +188,14 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--cursor': cursor,
     '--inset': inset,
     '--float': float,
+    '--grid-gap': gridGap(),
     '--grid-template-columns': gtc(),
     '--grid-template-rows': gtr(),
-    '--grid-gap': gridGap(),
+    '--justify-items': justifyItems,
+    '--grid-auto-flow': gaf,
+    '--grid-auto-columns': gac,
+    '--grid-auto-rows': gar,
+    '--place-items': placeItems,
+    '--place-content': placeContent,
   };
 };

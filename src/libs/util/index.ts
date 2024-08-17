@@ -1,1 +1,1 @@
-export { getStil } from './atom/stil';
+export { getStil } from './lib/stil';

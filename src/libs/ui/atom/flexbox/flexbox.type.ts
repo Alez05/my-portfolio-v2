@@ -4,6 +4,7 @@ interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
   alignItems?: string;
   alignContent?: string;
   justifyContent?: string;
+  justifyItems?: string;
   position?: string;
   padding?: number | number[];
   gap?: number | number[];

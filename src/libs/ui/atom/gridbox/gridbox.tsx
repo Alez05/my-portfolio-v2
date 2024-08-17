@@ -7,12 +7,30 @@ const GridBox = ({
   gridTemplateColumns = '',
   gridTemplateRows = '',
   gridGap = 0,
+  justifyItems = '',
+  alignContent = '',
+  alignItems = '',
+  justifyContent = '',
+  gridAutoFlow = '',
+  gridAutoColumns = '',
+  gridAutoRows = '',
+  placeContent = '',
+  placeItems = '',
 }: TGridBox) => {
   const stil = getStil({
     display,
     gtc: gridTemplateColumns,
     gtr: gridTemplateRows,
     gridGap,
+    justifyItems,
+    alignContent,
+    alignItems,
+    justifyContent,
+    gac: gridAutoColumns,
+    gar: gridAutoRows,
+    gaf: gridAutoFlow,
+    placeContent,
+    placeItems,
   }) as React.CSSProperties;
   return (
     <div

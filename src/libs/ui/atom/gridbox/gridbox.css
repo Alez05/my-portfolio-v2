@@ -13,7 +13,7 @@
   --place-items: unset;
   --place-content: unset;
 
-  display:  grid;
+  display: grid;
   grid-template-columns: var(--grid-template-columns, none);
   grid-template-rows: var(--grid-template-rows, none);
   gap: var(--grid-gap, 0);

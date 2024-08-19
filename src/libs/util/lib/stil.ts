@@ -3,13 +3,15 @@ interface stilOptions {
   unit?: 'px' | 'rem';
 }
 
-export const getStil = (obiect: Record<string, string | number | number[]>) => {
-  console.log(getStil);
-  console.log('getStil');
+export const toKebabCase = (property: string) =>
+  `--${property.replace(/(.)([A-Z])/g, '$1-$2').toLowerCase()}`;
 
+export const getStil = (obiect: Record<string, string | number | number[]>) => {
   const paddingList = (
     Array.isArray(obiect.padding) ? obiect.padding : [obiect.padding]
   ) as number[];
+
+  console.log(Object.keys(obiect).map(toKebabCase));
 
   // padding
   const padding = obiect.padding
@@ -96,8 +98,9 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
   // color
   const color = typeof obiect.color === 'string' ? obiect.color : '';
 
-  // bgc
-  const bgc = typeof obiect.bgc === 'string' ? obiect.bgc : '';
+  // backgroundColor
+  const backgroundColor =
+    typeof obiect.backgroundColor === 'string' ? obiect.backgroundColor : '';
 
   //cursor
   const cursor = typeof obiect.cursor === 'string' ? obiect.cursor : '';
@@ -117,21 +120,21 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
   const float = typeof obiect.float === 'string' ? obiect.float : '';
 
   // grid-template-columns
-  const gtc = () => {
-    if (Array.isArray(obiect.gtc)) {
-      return obiect.gtc.join(' ');
-    } else if (typeof obiect.gtc === 'string') {
-      return obiect.gtc;
+  const gridColumn = () => {
+    if (Array.isArray(obiect.gridColumn)) {
+      return obiect.gridColumn.join(' ');
+    } else if (typeof obiect.gridColumn === 'string') {
+      return obiect.gridColumn;
     }
     return '';
   };
 
   // grid-template-rows
-  const gtr = () => {
-    if (Array.isArray(obiect.gtr)) {
-      return obiect.gtr.join(' ');
-    } else if (typeof obiect.gtr === 'string') {
-      return obiect.gtr;
+  const gridRow = () => {
+    if (Array.isArray(obiect.gridRow)) {
+      return obiect.gridRow.join(' ');
+    } else if (typeof obiect.gridRow === 'string') {
+      return obiect.gridRow;
     }
     return '';
   };
@@ -151,13 +154,15 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
   };
 
   //grid-auto-flow
-  const gaf = obiect.gaf ? `${obiect.gaf}` : '';
+  const gridFlow = obiect.gridFlow ? `${obiect.gridFlow}` : '';
 
   // grid-auto-columns
-  const gac = obiect.gac ? `${obiect.gac}` : '';
+  const gridAutoColumn = obiect.gridAutoColumn
+    ? `${obiect.gridAutoColumn}`
+    : '';
 
   // grid-auto-rows
-  const gar = obiect.gar ? `${obiect.gar}` : '';
+  const gridAutoRow = obiect.gridAutoRow ? `${obiect.gridAutoRow}` : '';
 
   // place-items
   const placeItems = obiect.placeITems ? `${obiect.placeItems}` : '';
@@ -184,18 +189,19 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--border-radius': borderRadius(),
     '--border': border(),
     '--color': color,
-    '--background-color': bgc,
+    '--background-color': backgroundColor,
     '--cursor': cursor,
     '--inset': inset,
     '--float': float,
     '--grid-gap': gridGap(),
-    '--grid-template-columns': gtc(),
-    '--grid-template-rows': gtr(),
+    '--grid-template-columns': gridColumn(),
+    '--grid-template-rows': gridRow(),
     '--justify-items': justifyItems,
-    '--grid-auto-flow': gaf,
-    '--grid-auto-columns': gac,
-    '--grid-auto-rows': gar,
+    '--grid-auto-flow': gridFlow,
+    '--grid-auto-columns': gridAutoColumn,
+    '--grid-auto-rows': gridAutoRow,
     '--place-items': placeItems,
     '--place-content': placeContent,
+    '--type': type,
   };
 };

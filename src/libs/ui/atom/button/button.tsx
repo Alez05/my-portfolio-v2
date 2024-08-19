@@ -8,12 +8,18 @@ const Button = ({
   fontSize = 16,
   children,
   type = 'button',
-  
+  color = '',
+  backgroundColor = 'red',
 }: TButton) => {
-  const stil = getStil({ padding, fontSize, type }) as React.CSSProperties;
-
+  const stil = getStil({
+    padding,
+    fontSize,
+    color,
+    backgroundColor,
+  }) as React.CSSProperties;
   return (
     <button
+      type={type}
       disabled={disabled}
       className='button'
       style={stil}

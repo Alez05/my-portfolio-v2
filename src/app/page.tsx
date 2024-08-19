@@ -1,12 +1,20 @@
 import { Button, FlexBox, GridBox } from '@/libs/ui';
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <h1>Hello world</h1>
       <FlexBox>
-        <Button>Click me</Button>
+        <Button
+          type='button'
+          color='var(--color-danger)'
+          backgroundColor='var(--color-sunburst)'
+        >
+          Click me
+        </Button>
       </FlexBox>
     </main>
   );
-}
+};
+
+export default Home;

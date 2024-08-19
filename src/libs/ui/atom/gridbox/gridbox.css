@@ -1,9 +1,8 @@
 /* gridbox.css */
 .gridbox {
-  --display: grid;
   --grid-template-columns: none;
   --grid-template-rows: none;
-  --gridbox-gap: 0;
+  --gap: 0;
   --justify-items: stretch;
   --align-items: stretch;
   --justify-content: stretch;
@@ -14,7 +13,7 @@
   --place-items: unset;
   --place-content: unset;
 
-  display: var(--display, grid);
+  display:  grid;
   grid-template-columns: var(--grid-template-columns, none);
   grid-template-rows: var(--grid-template-rows, none);
   gap: var(--grid-gap, 0);

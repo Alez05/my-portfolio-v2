@@ -1,8 +1,7 @@
 interface TGridBox extends React.HTMLAttributes<HTMLDivElement> {
-  display?: string;
   gridTemplateColumns?: string;
   gridTemplateRows?: string;
-  gridGap?: number | number[];
+  gap?: number;
   justifyItems?: string;
   alignItems?: string;
   justifyContent?: string;

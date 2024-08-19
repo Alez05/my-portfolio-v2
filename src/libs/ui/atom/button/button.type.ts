@@ -3,13 +3,13 @@ export interface TButton extends React.HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean;
   padding?: number | number[];
   fontSize?: number;
-  type?: string;
+  type?: 'button' | 'submit' | 'reset';
   color?: string;
   size?: string;
   width?: string;
   height?: string;
   border?: string;
-  bgColor?: string;
+  backgroundColor?: string;
   cursor?: string;
   borderRadius?: string;
   gap?: number | number[];

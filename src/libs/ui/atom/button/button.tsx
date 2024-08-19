@@ -9,13 +9,25 @@ const Button = ({
   children,
   type = 'button',
   color = '',
-  backgroundColor = 'red',
+  backgroundColor = '',
+  width = '',
+  height = '',
+  cursor = '',
+  border = '',
+  borderRadius = '',
+  gap = 0,
 }: TButton) => {
   const stil = getStil({
     padding,
     fontSize,
     color,
     backgroundColor,
+    width,
+    height,
+    cursor,
+    border,
+    borderRadius,
+    gap,
   }) as React.CSSProperties;
   return (
     <button

@@ -1,12 +1,14 @@
-interface stilOptions {
+type stilOptions = {
   borderRadiusUnit?: 'px' | '%';
   unit?: 'px' | 'rem';
-}
+};
 
 export const toKebabCase = (property: string) =>
   `--${property.replace(/(.)([A-Z])/g, '$1-$2').toLowerCase()}`;
 
-export const getStil = (obiect: Record<string, string | number | number[]>) => {
+export const getStil = (
+  obiect: Record<string, string | number | number[] | boolean>
+) => {
   const paddingList = (
     Array.isArray(obiect.padding) ? obiect.padding : [obiect.padding]
   ) as number[];
@@ -173,6 +175,15 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
   // button type
   const type = obiect.type ? `${obiect.type}` : '';
 
+  // text as
+  const as = obiect.as ? `${obiect.as}` : '';
+
+  // line-height
+  const lineHeight = obiect.lineHeight ? `${obiect.lineHeight}` : '';
+
+  //crossed text
+  const textDecoration = obiect.textDecoration ? ` line-through;` : undefined;
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -203,5 +214,7 @@ export const getStil = (obiect: Record<string, string | number | number[]>) => {
     '--place-items': placeItems,
     '--place-content': placeContent,
     '--type': type,
+    '--line-height': lineHeight,
+    '--text-decoration': textDecoration,
   };
 };

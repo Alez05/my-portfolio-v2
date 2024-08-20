@@ -1,4 +1,4 @@
-import { Button, FlexBox, GridBox } from '@/libs/ui';
+import { Button, FlexBox, GridBox, Text } from '@/libs/ui';
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
           Click me
         </Button>
         <Button
-          type='button'
+          type='submit'
           color='var(--color-danger)'
           backgroundColor='var(--color-info)'
           width='200px'
@@ -39,6 +39,12 @@ const Home = () => {
         >
           Click me
         </Button>
+        <Text
+          textDecoration
+          as='h2'
+        >
+          alex boxx
+        </Text>
       </FlexBox>
     </main>
   );

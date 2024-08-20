@@ -1,0 +1,22 @@
+.text {
+  --color: black;
+  --font-size: 1rem;
+  --font-weight: 400;
+  --line-height: 1.5;
+  --letter-spacing: 0;
+  --text-align: none;
+  
+  margin: 0;
+
+  color: var(--color);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  text-align: var(--text-align);
+
+
+  & visited {
+    color: var(--color-primary);
+  }
+}

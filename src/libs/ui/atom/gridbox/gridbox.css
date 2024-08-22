@@ -14,16 +14,16 @@
   --place-content: unset;
 
   display: grid;
-  grid-template-columns: var(--grid-template-columns, none);
-  grid-template-rows: var(--grid-template-rows, none);
-  gap: var(--grid-gap, 0);
-  justify-items: var(--justify-items, stretch);
-  align-items: var(--align-items, stretch);
-  justify-content: var(--justify-content, stretch);
-  align-content: var(--align-content, stretch);
-  grid-auto-flow: var(--grid-auto-flow, row);
-  grid-auto-columns: var(--grid-auto-columns, auto);
-  grid-auto-rows: var(--grid-auto-rows, auto);
-  place-items: var(--place-items, unset);
-  place-content: var(--place-content, unset);
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-rows: var(--grid-template-rows);
+  gap: var(--gap);
+  justify-items: var(--justify-items);
+  align-items: var(--align-items);
+  justify-content: var(--justify-content);
+  align-content: var(--align-content);
+  grid-auto-flow: var(--grid-auto-flow);
+  grid-auto-columns: var(--grid-auto-columns);
+  grid-auto-rows: var(--grid-auto-rows);
+  place-items: var(--place-items);
+  place-content: var(--place-content);
 }

@@ -1,7 +1,7 @@
 import { FlexBox } from '../flexbox';
 import { Text } from '../text';
-import './input.css';
 import { TInput } from './input.type';
+import './input.css';
 
 const Input = ({
   color = '',
@@ -18,6 +18,9 @@ const Input = ({
   label,
   id,
   children,
+  type = 'text',
+  placeholder,
+  required,
 }: TInput) => {
   const stil = {
     color,
@@ -40,6 +43,9 @@ const Input = ({
       <input
         className='input'
         style={stil}
+        type={type}
+        placeholder={placeholder}
+        required={required}
         id={id}
         aria-describedby={describedBy}
         aria-labelledby={label}

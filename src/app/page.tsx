@@ -53,9 +53,16 @@ const Home = () => {
         </Button>
 
         <Input
-          typeof='text'
+          type='text'
+          placeholder='Enter your name'
           border='1px solid var(--color-primary)'
           borderRadius='10px'
+          padding={10}
+          width='300px'
+          height='50px'
+          fontSize={20}
+          backgroundColor='var(--color-rose)'
+          color='var(--color-primary)'
         />
       </FlexBox>
     </main>

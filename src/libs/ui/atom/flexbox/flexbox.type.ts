@@ -8,7 +8,7 @@ interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
   position?: string;
   padding?: number | number[];
   gap?: number | number[];
-  fontSize?: number;
+  fontSize?: number | string;
   width?: string;
   height?: string;
   flexDirection?: string;
@@ -19,6 +19,6 @@ interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
   color?: string;
   bgc?: string;
   cursor?: string;
-  inset?: number | number[];
+  inset?: number | number[] | string;
   float?: string;
 }

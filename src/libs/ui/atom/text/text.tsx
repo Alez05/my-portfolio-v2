@@ -5,39 +5,38 @@ import { TText } from './text.type';
 const Text = ({
   color = '',
   fontSize = 16,
-  fontWeight = 400,
+  fontWeight = '',
   lineHeight = 0,
   as = 'h1',
   children,
-  textDecoration = false,
-  elipsis = false,
-  href = '',
-  letterSpacing = 0,
+  textDecoration = '',
+  letterSpacing = '',
+  href,
   textAlign = '',
-  title = '',
-  underline = false,
+  title,
 }: TText) => {
   const stil = getStil({
     color,
     fontSize,
     as,
     lineHeight,
-    textDecoration,
-    href,
     letterSpacing,
+    textDecoration,
     textAlign,
-    elipsis,
-    title,
-    underline,
     fontWeight,
   }) as React.CSSProperties;
+
+  const Element = as;
+
   return (
-    <h1
+    <Element
       className='text'
       style={stil}
+      title={title}
+      href={href}
     >
       {children}
-    </h1>
+    </Element>
   );
 };
 

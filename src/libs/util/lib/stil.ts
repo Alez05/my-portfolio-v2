@@ -175,14 +175,34 @@ export const getStil = (
   // button type
   const type = obiect.type ? `${obiect.type}` : '';
 
-  // text as
-  const as = obiect.as ? `${obiect.as}` : '';
-
   // line-height
   const lineHeight = obiect.lineHeight ? `${obiect.lineHeight}` : '';
 
-  //crossed text
-  const textDecoration = obiect.textDecoration ? ` line-through;` : undefined;
+  //crossed/ underline text
+  const textDecoration = () => {
+    if (obiect.textDecoration === 'line-through') {
+      return 'line-through';
+    } else if (obiect.textDecoration === 'underline') {
+      return 'underline';
+    }
+    return '';
+  };
+
+  // font-weight
+  const fontWeight = () => {
+    if (typeof obiect.fontWeight === 'string') {
+      return obiect.fontWeight;
+    } else if (typeof obiect.fontWeight === 'number') {
+      return obiect.fontWeight;
+    }
+    return '';
+  };
+
+  // text-align
+  const textAlign = obiect.textAlign ? `${obiect.textAlign}` : '';
+
+  // letter-spacing
+  const letterSpacing = obiect.letterSpacing ? `${obiect.letterSpacing}` : '';
 
   return {
     '--padding': padding,
@@ -215,6 +235,9 @@ export const getStil = (
     '--place-content': placeContent,
     '--type': type,
     '--line-height': lineHeight,
-    '--text-decoration': textDecoration,
+    '--text-decoration': textDecoration(),
+    '--font-weight': fontWeight(),
+    '--text-align': textAlign,
+    '--letter-spacing': letterSpacing,
   };
 };

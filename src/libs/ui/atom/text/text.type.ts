@@ -2,14 +2,13 @@ export type TText = {
   children?: React.ReactNode;
   color?: string;
   fontSize?: number;
-  fontWeight?: number;
+  fontWeight?: number | string;
   lineHeight?: number;
-  letterSpacing?: number;
+  letterSpacing?: string;
   textAlign?: string;
   as?: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'a';
-  textDecoration?: boolean;
-  underline?: boolean;
-  elipsis?: boolean;
+  textDecoration?: string;
+  // ellipsis?: boolean;
   href?: string;
   title?: string;
 };

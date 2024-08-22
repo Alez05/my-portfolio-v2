@@ -1,10 +1,9 @@
 .flexbox {
-  --display: flex;
-  --align-items: center;
-  --justify-content: flex-start;
+  --align-items: stretch;
+  --justify-content: stretch;
   --justify-items: stretch;
   --align-content: stretch;
-  --position: relative;
+  --position: stretch;
   --padding: 0;
   --gap: 0;
   --font-size: 1rem;
@@ -19,23 +18,23 @@
   --cursor: pointer;
   --float: none;
 
-  display: var(--display, flex);
-  align-items: var(--align-items, center);
-  justify-content: var(--justify-content, flex-start);
-  align-content: var(--align-content, stretch);
-  position: var(--position, static);
-  padding: var(--padding, 0);
-  gap: var(--gap, 0);
-  font-size: var(--font-size, 1rem);
-  width: var(--width, 10vw);
-  height: var(--height, 10vh);
-  flex-direction: var(--flex-direction, column);
-  flex-wrap: var(--flex-wrap, nowrap);
-  border-radius: var(--border-radius, 0);
-  border: var(--border, 0);
-  color: var(--color, black);
-  background-color: var(--background-color, white);
-  cursor: var(--cursor, pointer);
-  inset: var(--inset, 0);
-  float: var(--float, none);
+  display: flex;
+  align-items: var(--align-items);
+  justify-content: var(--justify-content);
+  align-content: var(--align-content);
+  position: var(--position);
+  padding: var(--padding);
+  gap: var(--gap);
+  font-size: var(--font-size);
+  width: var(--width);
+  height: var(--height);
+  flex-direction: var(--flex-direction);
+  flex-wrap: var(--flex-wrap);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  color: var(--color);
+  background-color: var(--background-color);
+  cursor: var(--cursor);
+  inset: var(--inset);
+  float: var(--float);
 }

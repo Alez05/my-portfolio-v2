@@ -18,6 +18,30 @@ const Home = () => {
         <Text letterSpacing='3px'>oumaima</Text>
         <Text letterSpacing='3px'>elif</Text>
       </FlexBox>
+      <FlexBox gap={10}>
+        <Button
+          type='submit'
+          backgroundColor='var(--color-primary)'
+          border='2px solid var(--color-rose)'
+          borderRadius='10px'
+        >
+          Submit
+        </Button>
+        <Button
+          type='button'
+          backgroundColor='var(--color-secondary)'
+          border='2px solid var(--color-rose)'
+          borderRadius='10px'
+        >
+          Button
+        </Button>
+        <Button
+          type='reset'
+          backgroundColor='var(--color-rose)'
+        >
+          Reset
+        </Button>
+      </FlexBox>
     </main>
   );
 };

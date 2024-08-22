@@ -141,20 +141,6 @@ export const getStil = (
     return '';
   };
 
-  // grid-gap
-  const gridGapList = (
-    Array.isArray(obiect.gridGap) ? obiect.gridGap : [obiect.gridGap]
-  ) as number[];
-
-  const gridGap = () => {
-    if (gridGapList.length === 1) {
-      return `${gridGapList[0] / 16}rem`;
-    } else if (gridGapList.length === 2) {
-      return `${gridGapList[0] / 16}rem ${gridGapList[1] / 16}rem`;
-    }
-    return '';
-  };
-
   //grid-auto-flow
   const gridFlow = obiect.gridFlow ? `${obiect.gridFlow}` : '';
 
@@ -171,9 +157,6 @@ export const getStil = (
 
   // place-content
   const placeContent = obiect.placeContent ? `${obiect.placeContent}` : '';
-
-  // button type
-  const type = obiect.type ? `${obiect.type}` : '';
 
   // line-height
   const lineHeight = obiect.lineHeight ? `${obiect.lineHeight}` : '';
@@ -224,7 +207,6 @@ export const getStil = (
     '--cursor': cursor,
     '--inset': inset,
     '--float': float,
-    '--grid-gap': gridGap(),
     '--grid-template-columns': gridColumn(),
     '--grid-template-rows': gridRow(),
     '--justify-items': justifyItems,
@@ -233,7 +215,6 @@ export const getStil = (
     '--grid-auto-rows': gridAutoRow,
     '--place-items': placeItems,
     '--place-content': placeContent,
-    '--type': type,
     '--line-height': lineHeight,
     '--text-decoration': textDecoration(),
     '--font-weight': fontWeight(),

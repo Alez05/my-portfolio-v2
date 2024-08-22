@@ -1,4 +1,4 @@
-import { Button, FlexBox, GridBox, Text } from '@/libs/ui';
+import { Button, FlexBox, GridBox, Input, Text } from '@/libs/ui';
 
 const Home = () => {
   return (
@@ -15,8 +15,18 @@ const Home = () => {
         >
           alex
         </Text>
-        <Text letterSpacing='3px'>oumaima</Text>
-        <Text letterSpacing='3px'>elif</Text>
+        <Text
+          letterSpacing='3px'
+          textAlign='center'
+        >
+          oumaima
+        </Text>
+        <Text
+          letterSpacing='3px'
+          textAlign='center'
+        >
+          elif
+        </Text>
       </FlexBox>
       <FlexBox gap={10}>
         <Button
@@ -41,6 +51,12 @@ const Home = () => {
         >
           Reset
         </Button>
+
+        <Input
+          typeof='text'
+          border='1px solid var(--color-primary)'
+          borderRadius='10px'
+        />
       </FlexBox>
     </main>
   );

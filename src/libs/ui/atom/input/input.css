@@ -1,0 +1,23 @@
+.input {
+  --font-size: 1rem;
+  --width: auto;
+  --height: auto;
+  --padding: 0;
+  --border: 0;
+  --border-radius: 0;
+  --color: black;
+  --background-color: white;
+
+  line-height: 0.5rem;
+  transition: 250ms;
+
+  font-size: var(--font-size);
+  width: var(--width);
+  height: var(--height);
+  padding: var(--padding);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--color);
+  background-color: var(--background-color);
+
+}

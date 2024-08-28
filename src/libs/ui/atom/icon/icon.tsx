@@ -1,5 +1,5 @@
 import { getStil } from '@/libs/util';
-import { TIcon } from './icon.type';
+import { iconList, TIcon } from './icon.type';
 import './icon.css';
 
 const Icon = ({
@@ -8,8 +8,8 @@ const Icon = ({
   backgroundColor = '',
   fontSize = 16,
   borderRadius = '',
-  round = false,
   icon,
+  color = '',
 }: TIcon) => {
   const stil = getStil({
     width,
@@ -17,13 +17,20 @@ const Icon = ({
     backgroundColor,
     fontSize,
     borderRadius,
+    color,
   }) as React.CSSProperties;
+
+  const iconChart = icon
+    ? String.fromCharCode(parseInt(iconList[icon].replace('\\', ''), 16))
+    : null;
 
   return (
     <span
       className='icon'
       style={stil}
-    ></span>
+    >
+      {iconChart}
+    </span>
   );
 };
 

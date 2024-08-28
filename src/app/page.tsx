@@ -66,6 +66,17 @@ const Home = () => {
         <Icon
           backgroundColor='var(--color-rose)'
           icon='download'
+          width='50px'
+          height='50px'
+          fontSize={30}
+        />
+        <Icon
+          backgroundColor='var(--color-background)'
+          icon='whatsapp'
+          width='60px'
+          height='60px'
+          fontSize={40}
+          color='var(--color-secondary)'
         />
       </FlexBox>
     </main>

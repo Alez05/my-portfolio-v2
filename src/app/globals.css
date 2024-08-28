@@ -1,6 +1,4 @@
 :root {
-  --max-width: 1100px;
-  --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
@@ -29,16 +27,5 @@
     --color-positive: hsl(135, 40%, 50%);
     --color-negative: hsl(345, 80%, 40%);
     --color-neutral: hsl(195, 30%, 40%);
-
-    @font-face {
-      font-family: 'pff';
-      src:
-        url('/font/pff.ttf?dtdj54') format('truetype'),
-        url('/font/pff.woff?dtdj54') format('woff'),
-        url('/font/pff.svg?dtdj54#pff') format('svg');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-}
+  }
 

@@ -1,4 +1,4 @@
-import { Button, FlexBox, GridBox, Input, Text } from '@/libs/ui';
+import { Button, FlexBox, GridBox, Icon, Input, Text } from '@/libs/ui';
 
 const Home = () => {
   return (
@@ -53,7 +53,7 @@ const Home = () => {
         </Button>
 
         <Input
-          type='text'
+          type='password'
           placeholder='Enter your name'
           border='1px solid var(--color-primary)'
           borderRadius='10px'
@@ -61,8 +61,11 @@ const Home = () => {
           width='300px'
           height='50px'
           fontSize={20}
-          backgroundColor='var(--color-rose)'
           color='var(--color-primary)'
+        />
+        <Icon
+          backgroundColor='var(--color-rose)'
+          icon='download'
         />
       </FlexBox>
     </main>

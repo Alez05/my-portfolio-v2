@@ -1,1 +1,1 @@
-export {default as NavBar} from './nav/nav';
+export { default as NavBar } from '../molecule/nav/nav';

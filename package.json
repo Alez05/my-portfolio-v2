@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "firebase": "^10.13.1",
+    "firebase-admin": "^12.4.0",
     "formik": "^2.4.6",
     "next": "14.2.4",
     "react": "^18",

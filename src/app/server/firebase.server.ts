@@ -15,11 +15,11 @@ if (!admin.apps.length) {
 
 // write in database - this function will write data in database
 
-export const writeData = async (table = '', date={}, id ='' ) => {
+export const writeData = async (table = '', data={}, id ='' ) => {
   if (id) {
-    await admin.firestore().collection(table).doc(id).set(date);
+    await admin.firestore().collection(table).doc(id).set(data);
   } else {
-    await admin.firestore().collection(table).add(date);
+    await admin.firestore().collection(table).add(data);
   }
 }
 

@@ -1,8 +1,21 @@
-:root {
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+html, body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
     --color-primary: hsl(180, 100%, 40%);
     --color-secondary: hsl(30, 100%, 40%);
     --color-background: hsl(0, 0%, 90%);

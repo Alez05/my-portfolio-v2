@@ -1,3 +1,4 @@
+import { NavBar } from '@/libs/ui';
 import './globals.css';
 import { ReactNode } from 'react';
 

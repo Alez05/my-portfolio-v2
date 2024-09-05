@@ -4,14 +4,20 @@ const NavBar = () => {
   return (
     <nav className='navbar'>
       <a
+        className='logo'
+        href='/home'
+      >
+        Alex.dev
+      </a>
+      <a
         className='active'
         href='/'
       >
         Home
       </a>
-      <a href='/'>About</a>
-      <a href='/'>Contact</a>
-      <a href='/'>Blog</a>
+      <a href='/about'>About</a>
+      <a href='/contact'>Contact</a>
+      <a href='/blog'>Blog</a>
     </nav>
   );
 };

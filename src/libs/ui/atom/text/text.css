@@ -7,6 +7,8 @@
   --text-align: none;
   --text-decoration: none;
   --text-overflow: ellipsis;
+  --width: auto;
+  --height: auto;
 
   margin: 0;
 
@@ -18,6 +20,8 @@
   text-align: var(--text-align);
   text-decoration: var(--text-decoration);
   text-overflow: var(--text-overflow);
+  width: var(--width);
+  height: var(--height);
 
   & visited {
     color: var(--color-primary);

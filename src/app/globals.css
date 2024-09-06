@@ -8,37 +8,39 @@
 
 html, body {
   margin: 0;
+  padding: 1rem 1rem;
   scroll-behavior: smooth;
+  background-color: var(--color-black);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
 }
-
 :root {
-    --color-primary: hsl(180, 100%, 40%);
-    --color-secondary: hsl(30, 100%, 40%);
-    --color-background: hsl(0, 0%, 90%);
-    --color-text: hsl(0, 0%, 20%);
-    --color-muted-text: hsl(0, 0%, 35%);
-    --color-danger: hsl(0, 75%, 35%);
-    --color-warning: hsl(45, 100%, 40%);
-    --color-success: hsl(120, 50%, 40%);
-    --color-info: hsl(210, 90%, 40%);
-    --color-hover: hsl(225, 70%, 50%);
-    --color-active: hsl(210, 70%, 35%);
-    --color-disabled: hsl(0, 0%, 65%);
-    --color-light-border: hsl(0, 0%, 75%);
-    --color-dark-border: hsl(0, 0%, 55%);
-    --color-lavender: hsl(270, 60%, 50%);
-    --color-sunburst: hsl(45, 100%, 50%);
-    --color-rose: hsl(300, 40%, 60%);
-    --color-dark-gray: hsl(0, 0%, 20%);
-    --color-medium-gray: hsl(0, 0%, 40%);
-    --color-light-gray: hsl(0, 0%, 60%);
-    --color-very-light-gray: hsl(0, 0%, 75%);
-    --color-positive: hsl(135, 40%, 50%);
-    --color-negative: hsl(345, 80%, 40%);
-    --color-neutral: hsl(195, 30%, 40%);
-  }
-
+  --color-primary: hsl(180, 100%, 40%); /* Teal */
+  --color-secondary: hsl(30, 100%, 40%); /* Orange */
+  --color-background: hsl(0, 0%, 90%); /* Light Gray */
+  --color-text: hsl(0, 0%, 20%); /* Dark Gray */
+  --color-muted-text: hsl(0, 0%, 35%); /* Medium Gray */
+  --color-danger: hsl(0, 100%, 50%); /* Red */
+  --color-warning: hsl(45, 100%, 50%); /* Yellow */
+  --color-success: hsl(120, 100%, 30%); /* Green */
+  --color-info: hsl(210, 100%, 50%); /* Blue */
+  --color-hover: hsl(225, 70%, 60%); /* Light Blue */
+  --color-active: hsl(210, 70%, 40%); /* Darker Blue */
+  --color-disabled: hsl(0, 0%, 65%); /* Light Gray */
+  --color-light-border: hsl(0, 0%, 75%); /* Very Light Gray */
+  --color-dark-border: hsl(0, 0%, 55%); /* Dark Gray */
+  --color-lavender: hsl(270, 60%, 70%); /* Lavender */
+  --color-sunburst: hsl(45, 100%, 60%); /* Bright Yellow */
+  --color-rose: hsl(300, 50%, 70%); /* Rose Pink */
+  --color-dark-gray: hsl(0, 0%, 20%); /* Very Dark Gray */
+  --color-medium-gray: hsl(0, 0%, 40%); /* Medium Gray */
+  --color-light-gray: hsl(0, 0%, 60%); /* Light Gray */
+  --color-very-light-gray: hsl(0, 0%, 75%); /* Very Light Gray */
+  --color-positive: hsl(120, 100%, 30%); /* Green */
+  --color-negative: hsl(0, 100%, 50%); /* Red */
+  --color-neutral: hsl(195, 30%, 50%); /* Neutral Blue */
+  --color-white: hsl(0, 0%, 100%); /* White */
+  --color-black: hsl(210, 7%, 22%); /* Dark Gray (RGB: 52, 53, 58) */
+}

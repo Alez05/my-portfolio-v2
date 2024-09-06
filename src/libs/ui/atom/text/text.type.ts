@@ -11,4 +11,6 @@ export type TText = {
   // ellipsis?: boolean;
   href?: string;
   title?: string;
+  width?: string;
+  height?: string;
 };

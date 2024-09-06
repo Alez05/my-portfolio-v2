@@ -8,3 +8,4 @@ export { default as Text } from './atom/text/text';
 
 // organism components
 export { default as NavBar } from './molecule/nav/nav';
+export { default as HeroBox } from './molecule/herobox/herobox';

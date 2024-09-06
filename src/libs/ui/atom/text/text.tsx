@@ -14,6 +14,8 @@ const Text = ({
   href,
   textAlign = '',
   title,
+  width = '',
+  height = '',
 }: TText) => {
   const stil = getStil({
     color,
@@ -24,6 +26,8 @@ const Text = ({
     textDecoration,
     textAlign,
     fontWeight,
+    width,
+    height,
   }) as React.CSSProperties;
 
   const Element = as;

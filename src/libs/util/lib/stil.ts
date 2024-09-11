@@ -187,6 +187,9 @@ export const getStil = (
   // letter-spacing
   const letterSpacing = obiect.letterSpacing ? `${obiect.letterSpacing}` : '';
 
+  // z-index
+  const zIndex = obiect.zIndex ? `${obiect.zIndex}` : '';
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -220,5 +223,6 @@ export const getStil = (
     '--font-weight': fontWeight(),
     '--text-align': textAlign,
     '--letter-spacing': letterSpacing,
+    '--z-index': zIndex,
   };
 };

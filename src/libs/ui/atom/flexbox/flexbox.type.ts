@@ -21,4 +21,5 @@ interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
   cursor?: string;
   inset?: number | number[] | string;
   float?: string;
+  zIndex?: number;
 }

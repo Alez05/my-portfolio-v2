@@ -4,46 +4,42 @@ import './herobox.css';
 
 const HeroBox = () => {
   return (
-    <FlexBox
-      width='auto'
-      height='600px'
-      padding={40}
-      gap={20}
-      justifyContent='center'
-      backgroundColor='var(--color-black)'
-      border='1px solid var(--color-success)'
-    >
-      <Text
-        as='h1'
-        fontSize={40}
-        color='var(--color-white)'
+    <div className='hero-image'>
+      <FlexBox
+        width='100%'
+        height='100%'
+        padding={40}
+        gap={30}
+        alignContent='center'
+        justifyContent='center'
       >
-        {herobox.title}
-      </Text>
-      <Text
-        color='var(--color-white)'
-        fontSize={15}
-        as='p'
-      >
-        {herobox.description}
-      </Text>
-      <Button
-        type='button'
-        width='150px'
-        height='50px'
-        backgroundColor='var(--color-dark-gray)'
-        border='1px solid var(--color-warning)'
-        color='var(--color-white)'
-        borderRadius='10px'
-      >
-        {herobox.buttonText}
-      </Button>
-      <img
-        src={herobox.image}
-        alt=''
-        className='hero-image'
-      />
-    </FlexBox>
+        <Text
+          as='h1'
+          fontSize={40}
+          color='var(--color-sunburst)'
+        >
+          {herobox.title}
+        </Text>
+        <Text
+          color='var(--color-sunburst)'
+          fontSize={20}
+          as='p'
+        >
+          {herobox.description}
+        </Text>
+        <Button
+          type='button'
+          width='150px'
+          height='50px'
+          backgroundColor='var(--color-dark-gray)'
+          border='1px solid var(--color-warning)'
+          color='var(--color-white)'
+          borderRadius='10px'
+        >
+          {herobox.buttonText}
+        </Button>
+      </FlexBox>
+    </div>
   );
 };
 

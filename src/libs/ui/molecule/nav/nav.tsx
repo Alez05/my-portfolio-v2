@@ -1,4 +1,6 @@
 import './nav.css';
+import navLinks from '../../../data/navlinks.json';
+
 
 const NavBar = () => {
   return (
@@ -9,15 +11,15 @@ const NavBar = () => {
       >
         Alex.dev
       </a>
-      <a
-        className='active'
-        href='/'
-      >
-        Home
-      </a>
-      <a href='/about'>About</a>
-      <a href='/contact'>Contact</a>
-      <a href='/blog'>Blog</a>
+      {navLinks.map((link, index) => (
+        <a
+          key={index}
+          href={link.path}
+          className={link.path === '/' ? 'active' : ''}
+        >
+          {link.name}
+        </a>
+      ))}
     </nav>
   );
 };

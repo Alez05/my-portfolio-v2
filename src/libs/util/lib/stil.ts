@@ -190,6 +190,9 @@ export const getStil = (
   // z-index
   const zIndex = obiect.zIndex ? `${obiect.zIndex}` : '';
 
+  // box-shadow
+  const boxShadow = obiect.boxShadow ? `${obiect.boxShadow}` : '';
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -224,5 +227,6 @@ export const getStil = (
     '--text-align': textAlign,
     '--letter-spacing': letterSpacing,
     '--z-index': zIndex,
+    '--box-shadow': boxShadow,
   };
 };

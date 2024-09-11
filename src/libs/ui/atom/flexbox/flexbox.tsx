@@ -25,6 +25,7 @@ const FlexBox = ({
   float = '',
   justifyItems = '',
   zIndex = 0,
+  boxShadow = '',
 }: TFlexBox) => {
   const stil = getStil({
     display,
@@ -49,6 +50,7 @@ const FlexBox = ({
     float,
     justifyItems,
     zIndex,
+    boxShadow,
   }) as React.CSSProperties;
   return (
     <div

@@ -17,6 +17,7 @@
   --background-color: none;
   --cursor: pointer;
   --float: none;
+  --box-shadow: none;
 
   display: flex;
   align-items: var(--align-items);
@@ -37,4 +38,5 @@
   cursor: var(--cursor);
   inset: var(--inset);
   float: var(--float);
+  box-shadow: var(--box-shadow);
 }

@@ -22,4 +22,5 @@ interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
   inset?: number | number[] | string;
   float?: string;
   zIndex?: number;
+  boxShadow?: string;
 }

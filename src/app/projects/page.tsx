@@ -1,8 +1,8 @@
 const AboutPage = () => {
   return (
     <div>
-      <h1>About</h1>
-      <p>Things about me</p>
+      <h1>Projects</h1>
+      <p>My projects</p>
     </div>
   );
 };

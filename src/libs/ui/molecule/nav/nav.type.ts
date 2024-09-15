@@ -1,5 +1,9 @@
-export type TNav = {
-  children?: React.ReactNode;
-  name?: string;
-  path?: string;
+// nav.type.ts
+export type TNavLink = {
+  name: string;
+  path: string;
+};
+
+export type TNavProps = {
+  navLinks: TNavLink[];
 };

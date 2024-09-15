@@ -1,26 +1,16 @@
 import './nav.css';
-import navLinks from '../../../data/navlinks.json';
+import navLinksData from '../../../data/navLinksData.json';
+import { TNavProps } from './nav.type';
+import ClientNav from './[client-nav]/clientnav';
 
-
-const NavBar = () => {
+const NavBar = ({ navLinks = [] }: TNavProps) => {
   return (
-    <nav className='navbar'>
-      <a
-        className='logo'
-        href='/home'
-      >
-        Alex.dev
-      </a>
-      {navLinks.map((link, index) => (
-        <a
-          key={index}
-          href={link.path}
-          className={link.path === '/' ? 'active' : ''}
-        >
-          {link.name}
-        </a>
-      ))}
-    </nav>
+    <header className='navheader'>
+      <div className='navdiv'>
+        <span className='logo'>Alex.dev</span>
+        <ClientNav navLinks={navLinks.length > 0 ? navLinks : navLinksData} />
+      </div>
+    </header>
   );
 };
 

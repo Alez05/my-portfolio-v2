@@ -9,14 +9,14 @@ import {
   Text,
 } from '@/libs/ui';
 
-const Home = () => {
+const MainHomePage = () => {
   return (
     <main>
-      <NavBar />
+      <NavBar navLinks={[]} />
       <HeroBox />
       <h1>Hello world</h1>
     </main>
   );
 };
 
-export default Home;
+export default MainHomePage;

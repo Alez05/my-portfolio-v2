@@ -7,7 +7,6 @@ const HeroBox = () => {
     <div className='hero-image'>
       <FlexBox
         width='100%'
-        height='100%'
         padding={40}
         gap={30}
         alignContent='center'

@@ -1,20 +1,38 @@
 /* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #514a4a52;
+.navheader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+/* Flexbox for logo and nav alignment */
+.navdiv {
   display: flex;
-  justify-content: center; /* Center the links */
+  justify-content: center;
   align-items: center;
-  position: relative; /* Make the container relative to position the logo */
-  padding: 0 20px; /* Optional padding */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 100%;
+  position: relative;
+}
+
+/* Nav styling */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .navbar a {
-  font-size: 16px;
-  color: white;
-  text-align: center;
+  font-size: 20px;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar a:hover {
@@ -23,12 +41,12 @@
 }
 
 .navbar a.active {
-  background-color: #393837;
-  color: white;
+  color: black;
 }
 
 .logo {
   position: absolute;
-  left: 0;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
-

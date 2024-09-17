@@ -30,6 +30,7 @@ export const iconList = {
   discord: '\\e903',
   github1: '\\e904',
   javascript: '\\e905',
+  envelope: '\\ea84',
 } as const;
 
 export type TIconList = keyof typeof iconList;

@@ -4,22 +4,5 @@
   "image": "https://avatars2.githubusercontent.com/u/1011776?s=460&v=4",
   "readMore": "Read more",
   "buttonText": "Contact me",
-  "buttonLink": "/contact",
-  "socials": [
-    {
-      "name": "GitHub",
-      "url": "/url-to-github",
-      "icon": "github"
-    },
-    {
-      "name": "LinkedIn",
-      "url": "/url-to-linkedin",
-      "icon": "linkedin"
-    },
-    {
-      "name": "Email",
-      "url": "/url-to-email",
-      "icon": "email"
-    }
-  ]
+  "buttonLink": "/contact"
 }

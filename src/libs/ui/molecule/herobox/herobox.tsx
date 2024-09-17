@@ -1,6 +1,7 @@
 import { Button, FlexBox, GridBox, Text } from '../../atom';
 import herobox from '../../../data/herobox.json';
 import './herobox.css';
+import { SocialNetwork } from '../network';
 
 const HeroBox = () => {
   return (
@@ -61,6 +62,9 @@ const HeroBox = () => {
             >
               {herobox.readMore}
             </Button>
+          </FlexBox>
+          <FlexBox>
+            <SocialNetwork />
           </FlexBox>
         </FlexBox>
       </FlexBox>

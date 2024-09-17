@@ -28,8 +28,8 @@
   --border-radius: 0;
   --width: 24px;
   --height: 24px;
-  --background-color: transparent;
-  --color: var(--color-primary);
+  --background-color: none;
+  --color: black;
 
   font-size: var(--font-size);
   border-radius: var(--border-radius);

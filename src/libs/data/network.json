@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Alez05",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/alexandru-cercel-6b977b220/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Email",
+      "url": "/url-to-email",
+      "icon": "envelope"
+    }
+  ]
+}

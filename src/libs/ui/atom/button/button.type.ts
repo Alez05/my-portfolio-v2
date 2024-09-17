@@ -12,4 +12,5 @@ export interface TButton extends React.HTMLAttributes<HTMLButtonElement> {
   cursor?: string;
   borderRadius?: string;
   gap?: number | number[];
+  boxShadow?: string;
 }

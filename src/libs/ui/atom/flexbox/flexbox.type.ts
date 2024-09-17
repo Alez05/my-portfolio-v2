@@ -1,5 +1,6 @@
-interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
+export type TFlexBox = {
   // Costum properites
+  children?: React.ReactNode;
   display?: string;
   alignItems?: string;
   alignContent?: string;
@@ -23,4 +24,6 @@ interface TFlexBox extends React.HTMLAttributes<HTMLDivElement> {
   float?: string;
   zIndex?: number;
   boxShadow?: string;
-}
+  as?: keyof JSX.IntrinsicElements;
+  margin?: number | string;
+};

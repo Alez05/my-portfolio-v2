@@ -3,21 +3,27 @@
   --font-size: 1rem;
   --border: 0;
   --border-radius: 0;
-  --color: black;
-  --background-color: white;
-  --cursor: pointer;
-  --width: 10vw;
-  --height: 10vh;
+  --color: none;
+  --background-color: none;
+  --cursor: unset;
+  --width: none;
+  --height: none;
   --gap: 0;
+  --box-shadow: none;
 
   padding: var(--padding);
-  font-size: var(--font-size, 16px);
-  border: var(--border, 0);
-  border-radius: var(--border-radius, 0);
-  color: var(--color, black);
-  background-color: var(--background-color, white);
-  cursor: var(--cursor, pointer);
-  width: var(--width, auto);
-  height: var(--height, auto);
-  gap: var(--gap, 0);
+  font-size: var(--font-size);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--color);
+  background-color: var(--background-color);
+  cursor: var(--cursor);
+  width: var(--width);
+  height: var(--height);
+  gap: var(--gap);
+  box-shadow: var(--box-shadow);
+}
+
+.button:hover {
+  box-shadow: none;
 }

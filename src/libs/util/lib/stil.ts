@@ -193,6 +193,13 @@ export const getStil = (
   // box-shadow
   const boxShadow = obiect.boxShadow ? `${obiect.boxShadow}` : '';
 
+  // margin
+  const margin = obiect.margin
+    ? typeof obiect.margin === 'number'
+      ? `${obiect.margin}px`
+      : obiect.margin
+    : '';
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -228,5 +235,6 @@ export const getStil = (
     '--letter-spacing': letterSpacing,
     '--z-index': zIndex,
     '--box-shadow': boxShadow,
+    '--margin': margin,
   };
 };

@@ -16,6 +16,7 @@ const Button = ({
   border = '',
   borderRadius = '',
   gap = 0,
+  boxShadow = '',
 }: TButton) => {
   const stil = getStil({
     padding,
@@ -28,6 +29,7 @@ const Button = ({
     border,
     borderRadius,
     gap,
+    boxShadow,
   }) as React.CSSProperties;
   return (
     <button

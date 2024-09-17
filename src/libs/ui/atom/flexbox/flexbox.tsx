@@ -1,7 +1,9 @@
 import { getStil } from '@/libs/util';
 import './flexbox.css';
+import { TFlexBox } from './flexbox.type';
 
 const FlexBox = ({
+  as: Element = 'div',
   display = '',
   children,
   alignItems = '',
@@ -26,6 +28,7 @@ const FlexBox = ({
   justifyItems = '',
   zIndex = 0,
   boxShadow = '',
+  margin = 0,
 }: TFlexBox) => {
   const stil = getStil({
     display,
@@ -51,14 +54,15 @@ const FlexBox = ({
     justifyItems,
     zIndex,
     boxShadow,
+    margin,
   }) as React.CSSProperties;
   return (
-    <div
+    <Element
       style={stil}
       className='flexbox'
     >
       {children}
-    </div>
+    </Element>
   );
 };
 

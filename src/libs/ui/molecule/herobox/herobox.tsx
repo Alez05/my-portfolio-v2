@@ -1,7 +1,7 @@
 import { Button, FlexBox, GridBox, Text } from '../../atom';
 import herobox from '../../../data/herobox.json';
 import './herobox.css';
-import { SocialNetwork } from '../network';
+import { Socials } from '../socials';
 
 const HeroBox = () => {
   return (
@@ -65,7 +65,7 @@ const HeroBox = () => {
               {herobox.readMore}
             </Button>
           </FlexBox>
-          <SocialNetwork />
+          <Socials />
         </FlexBox>
         <FlexBox
           justifyContent='center'

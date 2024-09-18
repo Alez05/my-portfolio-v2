@@ -9,4 +9,4 @@ export { default as Text } from './atom/text/text';
 // organism components
 export { default as NavBar } from './molecule/nav/nav';
 export { default as HeroBox } from './molecule/herobox/herobox';
-export { default as SocialNetwork } from './molecule/network/network';
+export { default as SocialNetwork } from './molecule/socials/socials';

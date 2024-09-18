@@ -63,7 +63,7 @@ const HeroBox = () => {
               {herobox.readMore}
             </Button>
           </FlexBox>
-          <FlexBox>
+          <FlexBox >
             <SocialNetwork />
           </FlexBox>
         </FlexBox>

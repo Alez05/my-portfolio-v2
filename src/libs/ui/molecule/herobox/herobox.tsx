@@ -11,26 +11,27 @@ const HeroBox = () => {
     >
       <FlexBox
         width='100%'
-        height='100vh'
+        height='70vh'
         padding={80}
-        gap={30}
-        alignContent='space-around'
+        gap={50}
+        flexDirection='row'
+        justifyContent='space-between'
         boxShadow='0 0 10px 0 rgba(0, 0, 0, 0.1)'
         as='section'
       >
         <FlexBox
-          as='section'
-          gap={70}
+          gap={80}
+          width='60%'
         >
           <Text
             as='h1'
-            fontSize={40}
-            color='var(--color-sunburst)'
+            fontSize={60}
+            color='var(--color-text)'
           >
             {herobox.title}
           </Text>
           <Text
-            color='var(--color-sunburst)'
+            color='var(--color-text)'
             fontSize={20}
             as='p'
           >
@@ -39,6 +40,7 @@ const HeroBox = () => {
           <FlexBox
             flexDirection='row'
             gap={30}
+            width='600px'
           >
             <Button
               type='button'
@@ -64,6 +66,17 @@ const HeroBox = () => {
             </Button>
           </FlexBox>
           <SocialNetwork />
+        </FlexBox>
+        <FlexBox
+          justifyContent='center'
+          width='40%'
+          flexDirection='row'
+        >
+          <img
+            src='/images/profile.png'
+            alt='profilepic'
+            className='hero-image'
+          />
         </FlexBox>
       </FlexBox>
     </FlexBox>

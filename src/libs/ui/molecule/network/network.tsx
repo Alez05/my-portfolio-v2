@@ -6,7 +6,6 @@ const SocialNetwork = () => {
     <FlexBox
       flexDirection='row'
       gap={20}
-      padding={20}
       width='300px'
     >
       <a

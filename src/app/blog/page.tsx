@@ -1,10 +1,7 @@
+import { Maintenance } from '@/libs/ui';
+
 const BlogPage = () => {
-  return (
-    <div>
-      <h1>Blog</h1>
-      <p>Blog page</p>
-    </div>
-  );
+  return <Maintenance pageTitle='Blog' />;
 };
 
 export default BlogPage;

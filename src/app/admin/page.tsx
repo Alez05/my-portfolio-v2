@@ -1,7 +1,8 @@
+import { Maintenance } from '@/libs/ui';
 import React from 'react';
 
 const Admin = () => {
-  return <div>Admin</div>;
+  return <Maintenance pageTitle='Admin' />;
 };
 
 export default Admin;

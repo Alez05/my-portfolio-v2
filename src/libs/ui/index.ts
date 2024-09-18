@@ -6,7 +6,8 @@ export { default as Icon } from './atom/icon/icon';
 export { default as Input } from './atom/input/input';
 export { default as Text } from './atom/text/text';
 
-// organism components
+// molecule components
 export { default as NavBar } from './molecule/nav/nav';
 export { default as HeroBox } from './molecule/herobox/herobox';
 export { default as SocialNetwork } from './molecule/socials/socials';
+export { default as Maintenance } from './molecule/maintenance/maintenance';

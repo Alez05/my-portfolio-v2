@@ -1,10 +1,7 @@
-const AboutPage = () => {
-  return (
-    <div>
-      <h1>Projects</h1>
-      <p>My projects</p>
-    </div>
-  );
+import { Maintenance } from '@/libs/ui';
+
+const Projects = () => {
+  return <Maintenance pageTitle='Projects' />;
 };
 
-export default AboutPage;
+export default Projects;

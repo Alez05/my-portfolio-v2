@@ -1,11 +1,7 @@
-const ContactPage = () => {
-  return (
-    <div>
-      <h1>Contact</h1>
-      <p>Contact me page</p>
-    </div>
-  );
-};
+import { Maintenance } from '@/libs/ui';
 
+const ContactPage = () => {
+  return <Maintenance pageTitle='Contact' />;
+};
 
 export default ContactPage;

@@ -1,11 +1,9 @@
-import { TNetwork } from './network.type';
 import './network.css';
-import network from '../../../data/network.json';
-import { Icon } from '../../atom';
+import { FlexBox, Icon } from '../../atom';
 
 const SocialNetwork = () => {
   return (
-    <ul className='social-list'>
+    <FlexBox as='div'>
       <li className='social-item'>
         <a
           target='_blank'
@@ -15,6 +13,7 @@ const SocialNetwork = () => {
             icon='github'
             width='50px'
             height='50px'
+            fontSize={25}
           />
         </a>
       </li>
@@ -27,6 +26,7 @@ const SocialNetwork = () => {
             icon='linkedin'
             width='50px'
             height='50px'
+            fontSize={25}
           />
         </a>
       </li>
@@ -36,9 +36,10 @@ const SocialNetwork = () => {
           rel='noopener noreferrer'
         >
           <Icon
-            icon='whatsapp'
+            icon='arond'
             width='50px'
             height='50px'
+            fontSize={25}
           />
         </a>
       </li>
@@ -51,10 +52,11 @@ const SocialNetwork = () => {
             icon='envelope'
             width='50px'
             height='50px'
+            fontSize={25}
           />
         </a>
       </li>
-    </ul>
+    </FlexBox>
   );
 };
 

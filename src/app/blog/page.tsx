@@ -1,7 +1,11 @@
-import { Maintenance } from '@/libs/ui';
+import { Layout, Maintenance } from '@/libs/ui';
 
 const BlogPage = () => {
-  return <Maintenance pageTitle='Blog' />;
+  return (
+    <Layout>
+      <Maintenance pageTitle='Blog' />
+    </Layout>
+  );
 };
 
 export default BlogPage;

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { TNavProps } from '../nav.type';
 
-const ClientNav = ({ navLinks }: TNavProps) => {
+const ClientNav = ({ navLinks = [] }: TNavProps) => {
   const [currentPath, setCurrentPath] = useState<string | null>(null);
 
   useEffect(() => {

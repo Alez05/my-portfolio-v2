@@ -5,5 +5,5 @@ export type TNavLink = {
 };
 
 export type TNavProps = {
-  navLinks: TNavLink[];
+  navLinks?: TNavLink[];
 };

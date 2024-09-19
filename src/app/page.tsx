@@ -1,33 +1,7 @@
-import {
-  Button,
-  FlexBox,
-  GridBox,
-  HeroBox,
-  Icon,
-  Input,
-  NavBar,
-  Text,
-} from '@/libs/ui';
+import { HomePage } from '@/libs/ui';
 
 const MainHomePage = () => {
-  return (
-    <main>
-      <NavBar navLinks={[]} />
-      <HeroBox />
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-    </main>
-  );
+  return <HomePage />;
 };
 
 export default MainHomePage;

@@ -1,11 +1,3 @@
-import { Layout, Maintenance } from '@/libs/ui';
-
-const BlogPage = () => {
-  return (
-    <Layout>
-      <Maintenance pageTitle='Blog' />
-    </Layout>
-  );
-};
+import { BlogPage } from "@/libs/ui";
 
 export default BlogPage;

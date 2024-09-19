@@ -1,8 +1,3 @@
-import { Maintenance } from '@/libs/ui';
-import React from 'react';
+import { AdminPage } from '@/libs/ui';
 
-const Admin = () => {
-  return <Maintenance pageTitle='Admin' />;
-};
-
-export default Admin;
+export default AdminPage;

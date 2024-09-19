@@ -8,9 +8,17 @@ export { default as Text } from './atom/text/text';
 
 // molecule components
 export { default as NavBar } from './molecule/nav/nav';
-export { default as HeroBox } from './molecule/herobox/herobox';
+export { default as HeroBox } from './organism/home/head/head';
 export { default as SocialNetwork } from './molecule/socials/socials';
 export { default as Maintenance } from './molecule/maintenance/maintenance';
 
 // organism components
 export { default as Layout } from './template/layout/layout';
+
+// pages
+export { default as AdminPage } from './pages/admin/page';
+export { default as BlogPage } from './pages/blog/page';
+export { default as ContactPage } from './pages/contact/page';
+export { default as HomePage } from './pages/home/page';
+export { default as ProjectPage } from './pages/projects/page';
+export { default as ServicePage } from './pages/services/page';

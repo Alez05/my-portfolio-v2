@@ -1,7 +1,11 @@
-import { Maintenance } from '@/libs/ui';
+import { Layout, Maintenance } from '@/libs/ui';
 
 const Projects = () => {
-  return <Maintenance pageTitle='Projects' />;
+  return (
+    <Layout>
+      <Maintenance pageTitle='Projects' />
+    </Layout>
+  );
 };
 
 export default Projects;

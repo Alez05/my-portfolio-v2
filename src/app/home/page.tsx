@@ -1,8 +1,11 @@
-import { Maintenance } from '@/libs/ui';
+import { Layout, Maintenance } from '@/libs/ui';
 
 const HomePage = () => {
-  return <Maintenance pageTitle='Home' />;
+  return (
+    <Layout>
+      <Maintenance pageTitle='Home' />
+    </Layout>
+  );
 };
-
 
 export default HomePage;

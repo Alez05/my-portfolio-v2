@@ -1,9 +1,11 @@
-import { Maintenance } from "@/libs/ui"
+import { Layout, Maintenance } from '@/libs/ui';
 
 const ServicesPage = () => {
   return (
-    <Maintenance  pageTitle="Services"  />
-  )
-}
+    <Layout>
+      <Maintenance pageTitle='Services' />
+    </Layout>
+  );
+};
 
-export default ServicesPage
+export default ServicesPage;

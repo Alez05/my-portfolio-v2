@@ -1,11 +1,3 @@
-import { Layout, Maintenance } from '@/libs/ui';
-
-const ContactPage = () => {
-  return (
-    <Layout>
-      <Maintenance pageTitle='Contact' />
-    </Layout>
-  );
-};
+import { ContactPage } from '@/libs/ui';
 
 export default ContactPage;

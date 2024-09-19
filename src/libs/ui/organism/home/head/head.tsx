@@ -1,9 +1,10 @@
-import { Button, FlexBox, GridBox, Text } from '../../atom';
-import herobox from '../../../../content/herobox.json';
-import './herobox.css';
-import { Socials } from '../socials';
+import React from 'react';
+import { Button, FlexBox, Text } from '../../../atom';
+import herobox from '../../../../../content/herobox.json';
+import './head.css';
+import { Socials } from '../../../molecule/socials';
 
-const HeroBox = () => {
+const HomeHeader = () => {
   return (
     <FlexBox
       margin='5rem auto'
@@ -83,4 +84,4 @@ const HeroBox = () => {
   );
 };
 
-export default HeroBox;
+export default HomeHeader;

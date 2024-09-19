@@ -1,11 +1,17 @@
-import { Layout, Maintenance } from '@/libs/ui';
+import { HeroSection, Layout, Maintenance } from '@/libs/ui';
 
-const ServicesPage = () => {
+const ServicePage = () => {
   return (
     <Layout>
-      <Maintenance pageTitle='Services' />
+      <HeroSection
+        title='alex services'
+        description='we offer you a diversity of services'
+        buttonText='cta'
+        imageUrl='/images/profile.png'
+        imageAlt='Alex profile'
+      />
     </Layout>
   );
 };
 
-export default ServicesPage;
+export default ServicePage;

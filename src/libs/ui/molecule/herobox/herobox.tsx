@@ -1,5 +1,5 @@
 import { Button, FlexBox, GridBox, Text } from '../../atom';
-import herobox from '../../../data/herobox.json';
+import herobox from '../../../../content/herobox.json';
 import './herobox.css';
 import { Socials } from '../socials';
 

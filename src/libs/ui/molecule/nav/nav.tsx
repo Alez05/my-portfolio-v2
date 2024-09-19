@@ -1,5 +1,5 @@
 import './nav.css';
-import navLinksData from '../../../data/navLinksData.json';
+import navLinksData from '../../../../content/navLinksData.json';
 import { TNavProps } from './nav.type';
 import ClientNav from './[client-nav]/clientnav';
 

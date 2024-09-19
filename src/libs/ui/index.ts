@@ -12,6 +12,5 @@ export { default as HeroBox } from './molecule/herobox/herobox';
 export { default as SocialNetwork } from './molecule/socials/socials';
 export { default as Maintenance } from './molecule/maintenance/maintenance';
 
-
 // organism components
-export {default as Layout} from './organism/layout/layout';
+export { default as Layout } from './template/layout/layout';

@@ -1,5 +1,5 @@
 import './socials.css';
-import { FlexBox, Icon } from '../../atom';
+import { FlexBox, Icon } from '../../../atom';
 
 const Socials = () => {
   return (

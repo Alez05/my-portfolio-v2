@@ -1,5 +1,5 @@
-export { NavBar } from './nav';
-export { Socials } from './socials';
+export { NavBar } from '../organism/reusable/nav';
+export { Socials } from '../organism/reusable/socials';
 
 // to change later
-export { Maintenance } from './maintenance';
+export { Maintenance } from '../organism/reusable/maintenance';

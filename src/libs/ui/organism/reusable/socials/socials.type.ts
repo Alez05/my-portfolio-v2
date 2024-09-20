@@ -1,4 +1,4 @@
-import { TIconList } from '../../atom/icon/icon.type';
+import { TIconList } from '../../../atom/icon/icon.type';
 
 export type TNetwork = {
   name: string;

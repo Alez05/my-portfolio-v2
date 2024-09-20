@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, FlexBox, Text } from '../../../../atom';
 import herobox from '../../../../../../content/herobox.json';
 import './head.css';
-import { Socials } from '../../../../molecule/socials';
+import { Socials } from '../../../reusable/socials';
 
 const HomeHeader = () => {
   return (

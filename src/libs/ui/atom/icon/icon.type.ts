@@ -6,6 +6,7 @@ export interface TIcon extends React.HTMLAttributes<HTMLSpanElement> {
   height?: string;
   borderRadius?: string;
   round?: boolean;
+  altText?: string;
 }
 
 export const iconList = {

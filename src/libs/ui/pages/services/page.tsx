@@ -1,6 +1,14 @@
-import { HeroSection, Layout, Maintenance } from '@/libs/ui';
+import { ButtonGroup, HeroSection, Layout, Maintenance } from '@/libs/ui';
 
 const ServicePage = () => {
+  const buttonArray = [
+    { label: 'alex', variant: 'primary' },
+    { label: 'alex', variant: 'primary' },
+    { label: 'alex', variant: 'primary' },
+    { label: 'alex', variant: 'primary' },
+    { label: 'alex', variant: 'primary' },
+    { label: 'alex', variant: 'primary' },
+  ];
   return (
     <Layout>
       <HeroSection
@@ -10,6 +18,7 @@ const ServicePage = () => {
         imageUrl='/images/profile.png'
         imageAlt='Alex profile'
       />
+      <ButtonGroup buttons={buttonArray} />
     </Layout>
   );
 };

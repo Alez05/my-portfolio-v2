@@ -1,4 +1,4 @@
-import { NavBar } from '../../molecule';
+import NavBar from '../../organism/reusable/nav/nav';
 import { TLayout } from './layout.type';
 
 const Layout = ({ children }: TLayout) => {

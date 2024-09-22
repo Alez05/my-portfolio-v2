@@ -7,16 +7,19 @@ export { default as Input } from './atom/input/input';
 export { default as Text } from './atom/text/text';
 
 // molecule components
+export { default as ButtonGroup } from './molecule/buttongroup/buttongroup';
+
+// organism components
+
+//pages
+export { default as HomeHeader } from './organism/pages/home/head/head';
+
+//reusable
+export { default as HeroSection } from './organism/reusable/herosection/herosection';
 export { default as NavBar } from './organism/reusable/nav/nav';
 export { default as HeroBox } from './organism/pages/home/head/head';
 export { default as SocialNetwork } from './organism/reusable/socials/socials';
 export { default as Maintenance } from './organism/reusable/maintenance/maintenance';
-
-// organism components
-//pages
-export { default as HomeHeader } from './organism/pages/home/head/head';
-//reusable
-export { default as HeroSection } from './organism/reusable/herosection/herosection';
 
 // template components
 export { default as Layout } from './template/layout/layout';

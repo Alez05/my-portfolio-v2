@@ -17,6 +17,7 @@ const Button = ({
   borderRadius = '',
   gap = 0,
   boxShadow = '',
+  variant = '',
 }: TButton) => {
   const stil = getStil({
     padding,

@@ -49,7 +49,7 @@ const HeroSection = ({
           >
             <Button
               type='button'
-              width='190px'
+              width='200px'
               height='60px'
               backgroundColor='var(--color-danger)'
               border='1px solid var(--color-warning)'

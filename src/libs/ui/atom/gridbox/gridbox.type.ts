@@ -1,4 +1,4 @@
-interface TGridBox extends React.HTMLAttributes<HTMLDivElement> {
+export type TGridBox = {
   gridTemplateColumns?: string;
   gridTemplateRows?: string;
   gap?: number;
@@ -11,4 +11,4 @@ interface TGridBox extends React.HTMLAttributes<HTMLDivElement> {
   gridAutoRows?: string;
   placeItems?: string;
   placeContent?: string;
-}
+};

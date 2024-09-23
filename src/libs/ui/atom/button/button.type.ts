@@ -1,4 +1,4 @@
-export interface TButton extends React.HTMLAttributes<HTMLButtonElement> {
+export type TButton = {
   // Costum properites
   disabled?: boolean;
   padding?: number | number[];
@@ -14,4 +14,5 @@ export interface TButton extends React.HTMLAttributes<HTMLButtonElement> {
   gap?: number | number[];
   boxShadow?: string;
   variant?: string;
-}
+  children?: React.ReactNode;
+};

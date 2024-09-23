@@ -1,6 +1,7 @@
 import { FormikProps } from 'formik';
 
-export interface TInput extends React.HTMLAttributes<HTMLDivElement> {
+export type TInput = {
+  children?: React.ReactNode;
   label?: string;
   describedBy?: string;
   color?: string;
@@ -22,4 +23,4 @@ export interface TInput extends React.HTMLAttributes<HTMLDivElement> {
   type?: string;
   placeholder?: string;
   required?: boolean;
-}
+};

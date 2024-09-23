@@ -1,5 +1,6 @@
 import { getStil } from '@/libs/util';
-import { iconList, TIcon } from './icon.type';
+import { iconList } from '@/libs/type';
+import { TIcon } from './icon.type';
 import './icon.css';
 
 const Icon = ({

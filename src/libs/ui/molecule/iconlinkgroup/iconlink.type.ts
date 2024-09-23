@@ -1,4 +1,4 @@
-import { TIconList } from '../../atom/icon/icon.type';
+import { TIconList } from '@/libs/type';
 
 export type TIconLink = {
   icon: TIconList;

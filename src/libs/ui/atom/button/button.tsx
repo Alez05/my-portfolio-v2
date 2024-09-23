@@ -3,10 +3,10 @@ import './button.css';
 import { getStil } from '@/libs/util';
 
 const Button = ({
+  children,
   disabled,
   padding = 10,
   fontSize = 16,
-  children,
   type = 'button',
   color = '',
   backgroundColor = '',

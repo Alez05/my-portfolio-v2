@@ -55,7 +55,6 @@ const HeroSection = ({
               border='1px solid var(--color-warning)'
               color='var(--color-white)'
               boxShadow='7px 7px 0 rgb(0, 0, 0)'
-              onClick={buttonAction}
             >
               {buttonText}
             </Button>

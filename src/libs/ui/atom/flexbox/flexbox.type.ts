@@ -26,4 +26,5 @@ export type TFlexBox = {
   boxShadow?: string;
   as?: keyof JSX.IntrinsicElements;
   margin?: number | string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };

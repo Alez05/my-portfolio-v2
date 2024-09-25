@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/libs/util/lang/i18n.js"  ],
   "exclude": [
     "node_modules"
   ]

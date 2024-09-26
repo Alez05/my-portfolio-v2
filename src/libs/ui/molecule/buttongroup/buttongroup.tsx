@@ -1,13 +1,13 @@
-import { Button, FlexBox } from '../../atom';
-import { TButtonGroup } from './buttongroup.type';
+import { Button, FlexBox } from '../../atom'
+import { TButtonGroup } from './buttongroup.type'
 
 const ButtonGroup = ({ buttons }: TButtonGroup) => {
-  const buttonArray = Array.isArray(buttons) ? buttons : [buttons];
+  const buttonArray = Array.isArray(buttons) ? buttons : [buttons]
   return (
     <FlexBox
-      flexDirection='row'
-      display='flex'
-      width='auto'
+      flexDirection="row"
+      display="flex"
+      width="auto"
       gap={20}
       padding={20}
     >
@@ -15,18 +15,19 @@ const ButtonGroup = ({ buttons }: TButtonGroup) => {
         return (
           <Button
             key={index}
-            variant='primary'
-            backgroundColor='var(--color-danger)'
-            width='200px'
-            height='60px'
-            boxShadow='7px 7px 0 rgb(0, 0, 0)'
+            variant="primary"
+            backgroundColor={button.backgroundColor || 'var(--color-danger)'}
+            width="200px"
+            height="60px"
+            boxShadow="7px 7px 0 rgb(0, 0, 0)"
+            border={button.border || '1px solid var(--color-dark-grey)'}
           >
             {button.label}
           </Button>
-        );
+        )
       })}
     </FlexBox>
-  );
-};
+  )
+}
 
-export default ButtonGroup;
+export default ButtonGroup

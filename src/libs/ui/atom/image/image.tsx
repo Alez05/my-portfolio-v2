@@ -15,6 +15,7 @@ export const Image = ({
   srcset,
   testId,
   title,
+  borderRadius = '',
 }: TImage) => {
   const ariaLabel = label || `${alt}`
 
@@ -22,8 +23,8 @@ export const Image = ({
     width,
     height,
     aspect,
+    borderRadius,
   }) as React.CSSProperties
-
   return (
     <FlexBox padding={20} width="auto">
       <img

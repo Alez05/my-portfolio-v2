@@ -1,13 +1,14 @@
-import { Button, FlexBox, Text } from '@/libs/ui/atom'
+import { Button, FlexBox, Image, Text } from '@/libs/ui/atom'
 import { THeroSection } from './herosection.type'
+import { ButtonGroup } from '@/libs/ui/molecule'
 
 const HeroSection = ({
   buttonAction,
-  buttonText,
   description,
   imageUrl,
   title,
   imageAlt,
+  buttons,
 }: THeroSection) => {
   return (
     <FlexBox margin="5rem auto" padding={40}>
@@ -29,21 +30,18 @@ const HeroSection = ({
             {description}
           </Text>
           <FlexBox flexDirection="row" gap={30} width="500px">
-            <Button
-              type="button"
-              width="200px"
-              height="60px"
-              backgroundColor="var(--color-danger)"
-              border="1px solid var(--color-dark-gray)"
-              color="var(--color-white)"
-              boxShadow="7px 7px 0 rgb(0, 0, 0)"
-            >
-              {buttonText}
-            </Button>
+            <ButtonGroup buttons={buttons}></ButtonGroup>
           </FlexBox>
         </FlexBox>
         <FlexBox justifyContent="center" width="40%" flexDirection="row">
-          <img src={imageUrl} alt={imageAlt} className="hero-image" />
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            width="400px"
+            aspect="1 / 1"
+            height="auto"
+            borderRadius="30%"
+          />
         </FlexBox>
       </FlexBox>
     </FlexBox>

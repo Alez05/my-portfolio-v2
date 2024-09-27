@@ -5,11 +5,12 @@
   --object-position: center;
   --aspect-ratio: auto;
 
-  border-radius: 30px;
+  --border-radius: 0;
 
   width: var(--width);
   height: var(--height);
   object-fit: var(--object-fit);
   object-position: var(--object-position);
   aspect-ratio: var(--aspect-ratio);
+  border-radius: var(--border-radius);
 }

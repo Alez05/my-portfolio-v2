@@ -3,6 +3,7 @@ import {
   FlexBox,
   HeroSection,
   IconLink,
+  Image,
   Layout,
   Maintenance,
 } from '@/libs/ui'
@@ -20,7 +21,11 @@ const ServicePage = () => {
       variant: 'primary',
       backgroundColor: 'var(--color-sunburst)',
     },
-    { label: 'alex', variant: 'primary', backgroundColor: 'var(--color-primary)' },
+    {
+      label: 'alex',
+      variant: 'primary',
+      backgroundColor: 'var(--color-primary)',
+    },
     { label: 'alex', variant: 'primary' },
     { label: 'alex', variant: 'primary' },
   ]
@@ -34,6 +39,14 @@ const ServicePage = () => {
         imageAlt="Alex profile"
       />
       <ButtonGroup buttons={buttonArray} />
+      <Image
+        src="/images/profile.png"
+        alt="man at a desk"
+        aspect="1 / 1"
+        width="400px"
+        height="auto"
+        loading="lazy"
+      />
     </Layout>
   )
 }

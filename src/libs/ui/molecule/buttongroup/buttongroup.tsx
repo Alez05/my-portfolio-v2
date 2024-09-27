@@ -1,7 +1,7 @@
 import { Button, FlexBox } from '../../atom'
 import { TButtonGroup } from './buttongroup.type'
 
-const ButtonGroup = ({ buttons }: TButtonGroup) => {
+const ButtonGroup = ({ buttons, children }: TButtonGroup) => {
   const buttonArray = Array.isArray(buttons) ? buttons : [buttons]
   return (
     <FlexBox
@@ -23,6 +23,7 @@ const ButtonGroup = ({ buttons }: TButtonGroup) => {
             border={button.border || '1px solid var(--color-dark-grey)'}
           >
             {button.label}
+            {children}
           </Button>
         )
       })}

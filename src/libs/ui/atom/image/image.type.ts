@@ -15,4 +15,5 @@ export type TImage = {
   src?: string
   loading?: TLoading
   testId?: string
+  borderRadius?: string
 }

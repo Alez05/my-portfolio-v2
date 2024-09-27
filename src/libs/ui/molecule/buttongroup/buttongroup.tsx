@@ -21,6 +21,7 @@ const ButtonGroup = ({ buttons, children }: TButtonGroup) => {
             height="60px"
             boxShadow="7px 7px 0 rgb(0, 0, 0)"
             border={button.border || '1px solid var(--color-dark-grey)'}
+            color={button.color || 'var(--color-white)'}
           >
             {button.label}
             {children}

@@ -10,7 +10,5 @@ export type TButtonConfig = {
 
 export type TButtonGroup = {
   buttons: TButtonConfig | TButtonConfig[]
-  flexDirection?: string
-  gap?: number | number[]
   children?: React.ReactNode
 }

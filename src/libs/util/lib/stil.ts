@@ -1,19 +1,19 @@
 type stilOptions = {
-  borderRadiusUnit?: 'px' | '%';
-  unit?: 'px' | 'rem';
-};
+  borderRadiusUnit?: 'px' | '%'
+  unit?: 'px' | 'rem'
+}
 
 export const toKebabCase = (property: string) =>
-  `--${property.replace(/(.)([A-Z])/g, '$1-$2').toLowerCase()}`;
+  `--${property.replace(/(.)([A-Z])/g, '$1-$2').toLowerCase()}`
 
 export const getStil = (
   obiect: Record<string, string | number | number[] | boolean>
 ) => {
   const paddingList = (
     Array.isArray(obiect.padding) ? obiect.padding : [obiect.padding]
-  ) as number[];
+  ) as number[]
 
-  console.log(Object.keys(obiect).map(toKebabCase));
+  console.log(Object.keys(obiect).map(toKebabCase))
 
   // padding
   const padding = obiect.padding
@@ -21,184 +21,183 @@ export const getStil = (
         .slice(0, 4)
         .map((n: number) => `${n / 16}rem`)
         .join(' ')
-    : '';
+    : ''
 
   // fontSize
-  const fontSize = obiect?.fontSize ? `${Number(obiect.fontSize) / 16}rem` : '';
+  const fontSize = obiect?.fontSize ? `${Number(obiect.fontSize) / 16}rem` : ''
 
   // display
-  const display = obiect.display ? `${obiect.display}` : '';
+  const display = obiect.display ? `${obiect.display}` : ''
 
   // alignItems
-  const alignItems = obiect.alignItems ? `${obiect.alignItems}` : '';
+  const alignItems = obiect.alignItems ? `${obiect.alignItems}` : ''
 
   // justifyContent
-  const justifyContent = obiect.justifyContent
-    ? `${obiect.justifyContent}`
-    : '';
+  const justifyContent = obiect.justifyContent ? `${obiect.justifyContent}` : ''
 
   // justifyItems
-  const justifyItems = obiect.justifyItems ? `${obiect.justifyItems}` : '';
+  const justifyItems = obiect.justifyItems ? `${obiect.justifyItems}` : ''
 
   // alignContent
-  const alignContent = obiect.alignContent ? `${obiect.alignContent}` : '';
+  const alignContent = obiect.alignContent ? `${obiect.alignContent}` : ''
 
   // position
-  const position = obiect.position ? `${obiect.position}` : '';
+  const position = obiect.position ? `${obiect.position}` : ''
 
   // gap
   const gapList = (
     Array.isArray(obiect.gap) ? obiect.gap : [obiect.gap]
-  ) as number[];
+  ) as number[]
 
   const gap = obiect.gap
     ? gapList
         .slice(0, 4)
         .map((n: number) => `${n / 16}rem`)
         .join(' ')
-    : '';
+    : ''
 
   // width
   const width = () => {
     if (typeof obiect.width === 'string') {
-      return obiect.width;
+      return obiect.width
     } else if (typeof obiect.width === 'number') {
-      return `${obiect.width}px`;
+      return `${obiect.width}px`
     }
-    return '';
-  };
+    return ''
+  }
 
   // height
   const height = () => {
     if (typeof obiect.height === 'string') {
-      return obiect.height;
+      return obiect.height
     } else if (typeof obiect.height === 'number') {
-      return `${obiect.height}px`;
+      return `${obiect.height}px`
     }
-    return '';
-  };
+    return ''
+  }
 
   // flexDirection
-  const flexDirection = obiect.flexDirection ? `${obiect.flexDirection}` : '';
+  const flexDirection = obiect.flexDirection ? `${obiect.flexDirection}` : ''
 
   // flexWrap
-  const flexWrap = obiect.flexWrap ? `${obiect.flexWrap}` : '';
+  const flexWrap = obiect.flexWrap ? `${obiect.flexWrap}` : ''
 
   // border
   const border = () => {
     if (typeof obiect.border === 'string') {
-      return obiect.border;
+      return obiect.border
     }
-    return '';
-  };
+    return ''
+  }
 
   // borderRadius
   const borderRadius = () => {
-    return typeof obiect.borderRadius === 'string' ? obiect.borderRadius : '';
-  };
+    return typeof obiect.borderRadius === 'string' ? obiect.borderRadius : ''
+  }
 
   // color
-  const color = typeof obiect.color === 'string' ? obiect.color : '';
+  const color = typeof obiect.color === 'string' ? obiect.color : ''
 
   // backgroundColor
   const backgroundColor =
-    typeof obiect.backgroundColor === 'string' ? obiect.backgroundColor : '';
+    typeof obiect.backgroundColor === 'string' ? obiect.backgroundColor : ''
 
   //cursor
-  const cursor = typeof obiect.cursor === 'string' ? obiect.cursor : '';
+  const cursor = typeof obiect.cursor === 'string' ? obiect.cursor : ''
 
   //inset
   const insetList = (
     Array.isArray(obiect.inset) ? obiect.inset : [obiect.inset]
-  ) as number[];
+  ) as number[]
 
   const inset = insetList
     .filter((n: number) => typeof n === 'number')
     .slice(0, 4)
     .map((n: number) => `${n / 16}rem`)
-    .join(' ');
+    .join(' ')
 
   // float
-  const float = typeof obiect.float === 'string' ? obiect.float : '';
+  const float = typeof obiect.float === 'string' ? obiect.float : ''
 
   // grid-template-columns
   const gridColumn = () => {
     if (Array.isArray(obiect.gridColumn)) {
-      return obiect.gridColumn.join(' ');
+      return obiect.gridColumn.join(' ')
     } else if (typeof obiect.gridColumn === 'string') {
-      return obiect.gridColumn;
+      return obiect.gridColumn
     }
-    return '';
-  };
+    return ''
+  }
 
   // grid-template-rows
   const gridRow = () => {
     if (Array.isArray(obiect.gridRow)) {
-      return obiect.gridRow.join(' ');
+      return obiect.gridRow.join(' ')
     } else if (typeof obiect.gridRow === 'string') {
-      return obiect.gridRow;
+      return obiect.gridRow
     }
-    return '';
-  };
+    return ''
+  }
 
   //grid-auto-flow
-  const gridFlow = obiect.gridFlow ? `${obiect.gridFlow}` : '';
+  const gridFlow = obiect.gridFlow ? `${obiect.gridFlow}` : ''
 
   // grid-auto-columns
-  const gridAutoColumn = obiect.gridAutoColumn
-    ? `${obiect.gridAutoColumn}`
-    : '';
+  const gridAutoColumn = obiect.gridAutoColumn ? `${obiect.gridAutoColumn}` : ''
 
   // grid-auto-rows
-  const gridAutoRow = obiect.gridAutoRow ? `${obiect.gridAutoRow}` : '';
+  const gridAutoRow = obiect.gridAutoRow ? `${obiect.gridAutoRow}` : ''
 
   // place-items
-  const placeItems = obiect.placeITems ? `${obiect.placeItems}` : '';
+  const placeItems = obiect.placeITems ? `${obiect.placeItems}` : ''
 
   // place-content
-  const placeContent = obiect.placeContent ? `${obiect.placeContent}` : '';
+  const placeContent = obiect.placeContent ? `${obiect.placeContent}` : ''
 
   // line-height
-  const lineHeight = obiect.lineHeight ? `${obiect.lineHeight}` : '';
+  const lineHeight = obiect.lineHeight ? `${obiect.lineHeight}` : ''
 
   //crossed/ underline text
   const textDecoration = () => {
     if (obiect.textDecoration === 'line-through') {
-      return 'line-through';
+      return 'line-through'
     } else if (obiect.textDecoration === 'underline') {
-      return 'underline';
+      return 'underline'
     }
-    return '';
-  };
+    return ''
+  }
 
   // font-weight
   const fontWeight = () => {
     if (typeof obiect.fontWeight === 'string') {
-      return obiect.fontWeight;
+      return obiect.fontWeight
     } else if (typeof obiect.fontWeight === 'number') {
-      return obiect.fontWeight;
+      return obiect.fontWeight
     }
-    return '';
-  };
+    return ''
+  }
 
   // text-align
-  const textAlign = obiect.textAlign ? `${obiect.textAlign}` : '';
+  const textAlign = obiect.textAlign ? `${obiect.textAlign}` : ''
 
   // letter-spacing
-  const letterSpacing = obiect.letterSpacing ? `${obiect.letterSpacing}` : '';
+  const letterSpacing = obiect.letterSpacing ? `${obiect.letterSpacing}` : ''
 
   // z-index
-  const zIndex = obiect.zIndex ? `${obiect.zIndex}` : '';
+  const zIndex = obiect.zIndex ? `${obiect.zIndex}` : ''
 
   // box-shadow
-  const boxShadow = obiect.boxShadow ? `${obiect.boxShadow}` : '';
+  const boxShadow = obiect.boxShadow ? `${obiect.boxShadow}` : ''
 
   // margin
   const margin = obiect.margin
     ? typeof obiect.margin === 'number'
       ? `${obiect.margin}px`
       : obiect.margin
-    : '';
+    : ''
+
+  // aspect
+  const aspect = obiect.aspect ? `${obiect.aspect}` : ''
 
   return {
     '--padding': padding,
@@ -236,5 +235,6 @@ export const getStil = (
     '--z-index': zIndex,
     '--box-shadow': boxShadow,
     '--margin': margin,
-  };
-};
+    '--aspect-ratio': aspect,
+  }
+}

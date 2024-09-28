@@ -13,7 +13,7 @@ export const getStil = (
     Array.isArray(obiect.padding) ? obiect.padding : [obiect.padding]
   ) as number[]
 
-  console.log(Object.keys(obiect).map(toKebabCase))
+  // console.log(Object.keys(obiect).map(toKebabCase))
 
   // padding
   const padding = obiect.padding

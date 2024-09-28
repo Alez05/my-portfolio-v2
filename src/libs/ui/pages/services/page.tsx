@@ -11,12 +11,12 @@ import {
 const ServicePage = () => {
   const buttonArray = [
     {
-      label: 'Cta',
+      label: 'yoooooo',
       variant: 'primary',
       backgroundColor: 'var(--color-danger)',
     },
     {
-      label: 'alex',
+      label: 'CJ',
       variant: 'primary',
       backgroundColor: 'var(--color-dark-gray)',
     },
@@ -27,17 +27,8 @@ const ServicePage = () => {
         title="alex services"
         description="we offer you a diversity of services"
         imageUrl="/images/profile.png"
-        imageAlt="Alex profile"
+        imageAlt="man at computer"
         buttons={buttonArray}
-      />
-      <ButtonGroup buttons={buttonArray} />
-      <Image
-        src="/images/profile.png"
-        alt="man at a desk"
-        aspect="1 / 1"
-        width="400px"
-        height="auto"
-        loading="lazy"
       />
     </Layout>
   )

@@ -10,6 +10,7 @@ export { default as Text } from './atom/text/text'
 // molecule components
 export { default as ButtonGroup } from './molecule/buttongroup/buttongroup'
 export { default as IconLink } from './molecule/iconlinkgroup/iconlink'
+export { default as InfoSection } from './molecule/infosection/infosection'
 
 // organism components
 

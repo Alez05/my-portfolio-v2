@@ -4,6 +4,7 @@ import {
   HeroSection,
   IconLink,
   Image,
+  InfoSection,
   Layout,
   Maintenance,
 } from '@/libs/ui'
@@ -30,6 +31,7 @@ const ServicePage = () => {
         imageAlt="man at computer"
         buttons={buttonArray}
       />
+      <InfoSection description="alex" title="alex" icon="book" />
     </Layout>
   )
 }

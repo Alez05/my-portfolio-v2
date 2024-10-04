@@ -1,7 +1,7 @@
-import { getStil } from '@/libs/util';
-import { iconList } from '@/libs/type';
-import { TIcon } from './icon.type';
-import './icon.css';
+import { getStil } from '@/libs/util'
+import { iconList } from '@/libs/type'
+import { TIcon } from './icon.type'
+import './icon.css'
 
 const Icon = ({
   width = '',
@@ -11,6 +11,7 @@ const Icon = ({
   borderRadius = '',
   icon,
   color = '',
+  boxShadow = '',
 }: TIcon) => {
   const stil = getStil({
     width,
@@ -19,20 +20,18 @@ const Icon = ({
     fontSize,
     borderRadius,
     color,
-  }) as React.CSSProperties;
+    boxShadow,
+  }) as React.CSSProperties
 
   const iconChart = icon
     ? String.fromCharCode(parseInt(iconList[icon].replace('\\', ''), 16))
-    : null;
+    : null
 
   return (
-    <span
-      className='icon'
-      style={stil}
-    >
+    <span className="icon" style={stil}>
       {iconChart}
     </span>
-  );
-};
+  )
+}
 
-export default Icon;
+export default Icon

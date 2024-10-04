@@ -31,6 +31,7 @@
   --height: 30px;
   --background-color: none;
   --color: black;
+  --box-shadow: none;
 
   font-size: var(--font-size);
   border-radius: var(--border-radius);
@@ -38,7 +39,5 @@
   height: var(--height);
   background-color: var(--background-color);
   color: var(--color);
-
-
-
+  box-shadow: var(--box-shadow);
 }

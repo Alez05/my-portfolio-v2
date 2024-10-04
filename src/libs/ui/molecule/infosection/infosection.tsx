@@ -29,6 +29,7 @@ const InfoSection = ({
             fontSize={30}
             width="60px"
             height="60px"
+            boxShadow="5px 5px var(--color-dark-gray)"
           />
         </FlexBox>
         <FlexBox
@@ -39,7 +40,11 @@ const InfoSection = ({
           bottom="50px"
         >
           <Text as="h1">{title}</Text>
-          <Text as="p">{description}</Text>
+          <FlexBox alignItems="center">
+            <Text as="p">
+              {description}
+            </Text>
+          </FlexBox>
         </FlexBox>
         <FlexBox></FlexBox>
       </FlexBox>

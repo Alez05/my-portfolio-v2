@@ -19,6 +19,8 @@
   --float: none;
   --box-shadow: none;
   --margin: 0;
+  --top: unset;
+  --bottom: unset;
 
   display: flex;
   align-items: var(--align-items);
@@ -41,4 +43,6 @@
   float: var(--float);
   box-shadow: var(--box-shadow);
   margin: var(--margin);
+  top: var(--top);
+  bottom: var(--bottom);
 }

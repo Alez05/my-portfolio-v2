@@ -1,6 +1,7 @@
 import {
   ButtonGroup,
   FlexBox,
+  GridBox,
   HeroSection,
   IconLink,
   Image,
@@ -31,7 +32,33 @@ const ServicePage = () => {
         imageAlt="man at computer"
         buttons={buttonArray}
       />
-      <InfoSection description="alex" title="alex" icon="book" />
+
+      <GridBox gridTemplateColumns="repeat(2, 1fr)" gap={10}>
+        <InfoSection
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam"
+          title="title"
+          icon="book"
+          backgroundColor="var(--color-danger)"
+        />
+        <InfoSection
+          title="babosnki"
+          icon="cogs"
+          description="lorebabosnki regele la bani"
+          backgroundColor="blue"
+        />
+        <InfoSection
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam"
+          title="title"
+          icon="clipboardtext"
+          backgroundColor="var(--color-primary)"
+        />
+        <InfoSection
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam"
+          title="title"
+          icon="facebook1"
+          backgroundColor="var(--color-info)"
+        />
+      </GridBox>
     </Layout>
   )
 }

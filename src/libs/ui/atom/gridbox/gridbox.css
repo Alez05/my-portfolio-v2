@@ -1,29 +1,21 @@
-/* gridbox.css */
 .gridbox {
-  --grid-template-columns: none;
-  --grid-template-rows: none;
-  --gap: 0;
-  --justify-items: stretch;
-  --align-items: stretch;
-  --justify-content: stretch;
-  --align-content: stretch;
-  --grid-auto-flow: row;
-  --grid-auto-columns: auto;
-  --grid-auto-rows: auto;
-  --place-items: unset;
-  --place-content: unset;
-
   display: grid;
-  grid-template-columns: var(--grid-template-columns);
-  grid-template-rows: var(--grid-template-rows);
-  gap: var(--gap);
-  justify-items: var(--justify-items);
-  align-items: var(--align-items);
-  justify-content: var(--justify-content);
-  align-content: var(--align-content);
-  grid-auto-flow: var(--grid-auto-flow);
-  grid-auto-columns: var(--grid-auto-columns);
-  grid-auto-rows: var(--grid-auto-rows);
-  place-items: var(--place-items);
-  place-content: var(--place-content);
+
+   /* Default values for the grid */
+  grid-template-columns: var(--grid-template-columns, 1fr);
+  grid-template-rows: var(--grid-template-rows, auto);
+  gap: var(--gap, 0);
+  justify-items: var(--justify-items, stretch);
+  align-items: var(--align-items, stretch);
+  justify-content: var(--justify-content, stretch);
+  align-content: var(--align-content, stretch);
+
+  /* Auto-flow and auto sizes */
+  grid-auto-flow: var(--grid-auto-flow, row);
+  grid-auto-columns: var(--grid-auto-columns, auto);
+  grid-auto-rows: var(--grid-auto-rows, auto);
+
+  /* Optional place properties */
+  place-items: var(--place-items, unset);
+  place-content: var(--place-content, unset);
 }

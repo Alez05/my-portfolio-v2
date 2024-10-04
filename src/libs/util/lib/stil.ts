@@ -120,23 +120,23 @@ export const getStil = (
   const float = typeof obiect.float === 'string' ? obiect.float : ''
 
   // grid-template-columns
-  const gridColumn = () => {
-    if (Array.isArray(obiect.gridColumn)) {
-      return obiect.gridColumn.join(' ')
-    } else if (typeof obiect.gridColumn === 'string') {
-      return obiect.gridColumn
+  const gridTemplateColumns = () => {
+    if (Array.isArray(obiect.gridTemplateColumns)) {
+      return obiect.gridTemplateColumns.join(' ')
+    } else if (typeof obiect.gridTemplateColumns === 'string') {
+      return obiect.gridTemplateColumns
     }
-    return ''
+    return '1fr'
   }
 
   // grid-template-rows
-  const gridRow = () => {
-    if (Array.isArray(obiect.gridRow)) {
-      return obiect.gridRow.join(' ')
-    } else if (typeof obiect.gridRow === 'string') {
-      return obiect.gridRow
+  const gridTemplateRows = () => {
+    if (Array.isArray(obiect.gridTemplateRows)) {
+      return obiect.gridTemplateRows.join(' ')
+    } else if (typeof obiect.gridTemplateRows === 'string') {
+      return obiect.gridTemplateRows
     }
-    return ''
+    return 'auto'
   }
 
   //grid-auto-flow
@@ -199,6 +199,12 @@ export const getStil = (
   // aspect
   const aspect = obiect.aspect ? `${obiect.aspect}` : ''
 
+  // top
+  const top = obiect.top ? `${obiect.top}` : ''
+
+  //bottom
+  const bottom = obiect.bottom ? `${obiect.bottom}` : ''
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -219,8 +225,8 @@ export const getStil = (
     '--cursor': cursor,
     '--inset': inset,
     '--float': float,
-    '--grid-template-columns': gridColumn(),
-    '--grid-template-rows': gridRow(),
+    '--grid-template-columns': gridTemplateColumns(),
+    '--grid-template-rows': gridTemplateRows(),
     '--justify-items': justifyItems,
     '--grid-auto-flow': gridFlow,
     '--grid-auto-columns': gridAutoColumn,
@@ -236,5 +242,7 @@ export const getStil = (
     '--box-shadow': boxShadow,
     '--margin': margin,
     '--aspect-ratio': aspect,
+    '--top': top,
+    '--bottom': bottom,
   }
 }

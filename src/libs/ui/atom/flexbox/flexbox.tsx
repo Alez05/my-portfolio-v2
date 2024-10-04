@@ -1,6 +1,6 @@
-import { getStil } from '@/libs/util';
-import './flexbox.css';
-import { TFlexBox } from './flexbox.type';
+import { getStil } from '@/libs/util'
+import './flexbox.css'
+import { TFlexBox } from './flexbox.type'
 
 const FlexBox = ({
   as: Element = 'div',
@@ -29,6 +29,8 @@ const FlexBox = ({
   zIndex = 0,
   boxShadow = '',
   margin = 0,
+  bottom = '',
+  top = '',
 }: TFlexBox) => {
   const stil = getStil({
     display,
@@ -55,15 +57,14 @@ const FlexBox = ({
     zIndex,
     boxShadow,
     margin,
-  }) as React.CSSProperties;
+    bottom,
+    top,
+  }) as React.CSSProperties
   return (
-    <Element
-      style={stil}
-      className='flexbox'
-    >
+    <Element style={stil} className="flexbox">
       {children}
     </Element>
-  );
-};
+  )
+}
 
-export default FlexBox;
+export default FlexBox

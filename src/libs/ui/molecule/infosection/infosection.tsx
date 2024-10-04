@@ -10,23 +10,38 @@ const InfoSection = ({
   title,
 }: TInfoSection) => {
   return (
-    <FlexBox padding={80}>
+    <FlexBox padding={80} as="article">
       <FlexBox
+        flexDirection="column"
         width="480px"
-        height="30vh"
+        height="290px"
         boxShadow="0 0 10px 0 rgba(0, 0, 0, 0.1)"
-        padding={80}
-        gap={20}
+        padding={20}
         borderRadius="20px"
-        border="1px solid var(--color-dark-gray)"
-        flexWrap="wrap"
+        alignItems="center"
         alignContent="center"
       >
-        <FlexBox justifyContent="center">
-          <Icon icon={icon} />
+        <FlexBox position="relative" bottom="48px">
+          <Icon
+            icon={icon}
+            borderRadius="50%"
+            backgroundColor={backgroundColor}
+            fontSize={30}
+            width="60px"
+            height="60px"
+          />
         </FlexBox>
-        <Text as="h1">{title}</Text>
-        <Text as="p">{description}</Text>
+        <FlexBox
+          gap={40}
+          alignItems="center"
+          padding={30}
+          position="relative"
+          bottom="50px"
+        >
+          <Text as="h1">{title}</Text>
+          <Text as="p">{description}</Text>
+        </FlexBox>
+        <FlexBox></FlexBox>
       </FlexBox>
     </FlexBox>
   )

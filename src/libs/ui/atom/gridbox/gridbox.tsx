@@ -1,5 +1,6 @@
-import './gridbox.css';
-import { getStil } from '@/libs/util';
+import './gridbox.css'
+import { getStil } from '@/libs/util'
+import { TGridBox } from './gridbox.type'
 
 const GridBox = ({
   children,
@@ -29,14 +30,11 @@ const GridBox = ({
     gridAutoFlow,
     placeContent,
     placeItems,
-  }) as React.CSSProperties;
+  }) as React.CSSProperties
   return (
-    <div
-      className='gridbox'
-      style={stil}
-    >
+    <div className="gridbox" style={stil}>
       {children}
     </div>
-  );
-};
-export default GridBox;
+  )
+}
+export default GridBox

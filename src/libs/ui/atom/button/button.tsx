@@ -1,6 +1,6 @@
-import type { TButton } from './button.type';
-import './button.css';
-import { getStil } from '@/libs/util';
+import type { TButton } from '@/libs/type'
+import './button.css'
+import { getStil } from '@/libs/util'
 
 const Button = ({
   children,
@@ -31,17 +31,12 @@ const Button = ({
     borderRadius,
     gap,
     boxShadow,
-  }) as React.CSSProperties;
+  }) as React.CSSProperties
   return (
-    <button
-      type={type}
-      disabled={disabled}
-      className='button'
-      style={stil}
-    >
+    <button type={type} disabled={disabled} className="button" style={stil}>
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

@@ -1,7 +1,7 @@
-import { FlexBox } from '../flexbox';
-import { Text } from '../text';
-import { TInput } from './input.type';
-import './input.css';
+import { FlexBox } from '../flexbox'
+import { Text } from '../text'
+import { TInput } from '@/libs/type'
+import './input.css'
 
 const Input = ({
   color = '',
@@ -31,17 +31,17 @@ const Input = ({
     borderRadius,
     fontSize,
     height,
-  } as React.CSSProperties;
+  } as React.CSSProperties
 
   const errorMessage =
     field?.name && form?.errors
       ? (form.errors[field.name as keyof typeof form.errors] as string)
-      : undefined;
+      : undefined
 
   return (
     <div>
       <input
-        className='input'
+        className="input"
         style={stil}
         type={type}
         placeholder={placeholder}
@@ -52,17 +52,13 @@ const Input = ({
         {...field}
       />
       {errorMessage && (
-        <FlexBox
-          color='var(--color-primary)'
-          padding={5}
-          fontSize={20}
-        >
-          <Text color='var(--color-primary)'>{errorMessage}</Text>
+        <FlexBox color="var(--color-primary)" padding={5} fontSize={20}>
+          <Text color="var(--color-primary)">{errorMessage}</Text>
           {children}
         </FlexBox>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input

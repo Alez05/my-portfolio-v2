@@ -1,5 +1,5 @@
 import { getStil } from '@/libs/util'
-import { TImage } from './image.type'
+import { TImage } from '@/libs/type'
 import './image.css'
 import { FlexBox } from '../flexbox'
 

@@ -1,3 +1,4 @@
+import { TImage } from '@/libs/type'
 import { TButtonConfig } from '@/libs/ui/molecule/buttongroup/buttongroup.type'
 
 export type THeroSection = {
@@ -5,6 +6,7 @@ export type THeroSection = {
   description: string
   imageUrl: string
   imageAlt: string
+  imageStyles?: TImage
   buttons: TButtonConfig[]
   buttonAction?: () => void
 }

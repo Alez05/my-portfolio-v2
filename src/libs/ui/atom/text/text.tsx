@@ -1,6 +1,6 @@
-import './text.css';
-import { getStil } from '@/libs/util';
-import { TText } from './text.type';
+import './text.css'
+import { getStil } from '@/libs/util'
+import { TText } from '@/libs/type'
 
 const Text = ({
   color = '',
@@ -28,20 +28,15 @@ const Text = ({
     fontWeight,
     width,
     height,
-  }) as React.CSSProperties;
+  }) as React.CSSProperties
 
-  const Element = as;
+  const Element = as
 
   return (
-    <Element
-      className='text'
-      style={stil}
-      title={title}
-      href={href}
-    >
+    <Element className="text" style={stil} title={title} href={href}>
       {children}
     </Element>
-  );
-};
+  )
+}
 
-export default Text;
+export default Text

@@ -1,5 +1,3 @@
-
-
 export const iconList = {
   librarybooks: '\\e928',
   email: '\\e900',
@@ -67,6 +65,19 @@ export const iconList = {
   wrench: '\\e935',
   zoomin: '\\e936',
   zoomout: '\\e937',
-} as const;
+} as const
 
-export type TIconList = keyof typeof iconList;
+export type TIconList = keyof typeof iconList
+
+export type TIcon = {
+  icon?: TIconList
+  backgroundColor?: string
+  fontSize?: number
+  width?: string
+  height?: string
+  borderRadius?: string
+  round?: boolean
+  altText?: string
+  color?: string
+  boxShadow?: string
+}

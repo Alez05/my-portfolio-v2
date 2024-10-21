@@ -1,6 +1,6 @@
 import { getStil } from '@/libs/util'
 import './flexbox.css'
-import { TFlexBox } from './flexbox.type'
+import { TFlexBox } from '@/libs/type'
 
 const FlexBox = ({
   as: Element = 'div',

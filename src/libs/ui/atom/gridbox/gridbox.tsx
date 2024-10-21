@@ -1,6 +1,6 @@
 import './gridbox.css'
 import { getStil } from '@/libs/util'
-import { TGridBox } from './gridbox.type'
+import { TGridBox } from '@/libs/type'
 
 const GridBox = ({
   children,

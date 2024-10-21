@@ -205,6 +205,9 @@ export const getStil = (
   //bottom
   const bottom = obiect.bottom ? `${obiect.bottom}` : ''
 
+  // object-position
+  const objectPosition = obiect.objectPosition ? `${obiect.objectPosition}` : ''
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -244,5 +247,6 @@ export const getStil = (
     '--aspect-ratio': aspect,
     '--top': top,
     '--bottom': bottom,
+    '--object-position': objectPosition,
   }
 }

@@ -1,6 +1,6 @@
 import { getStil } from '@/libs/util'
 import { iconList } from '@/libs/type'
-import { TIcon } from './icon.type'
+import { TIcon } from '@/libs/type'
 import './icon.css'
 
 const Icon = ({

@@ -3,6 +3,7 @@ import { TButtonGroup } from './buttongroup.type'
 
 const ButtonGroup = ({ buttons, children }: TButtonGroup) => {
   const buttonArray = Array.isArray(buttons) ? buttons : [buttons]
+
   return (
     <FlexBox
       flexDirection="row"

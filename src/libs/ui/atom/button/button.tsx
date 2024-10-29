@@ -18,6 +18,7 @@ const Button = ({
   gap = 0,
   boxShadow = '',
   variant = '',
+  onClick,
 }: TButton) => {
   const stil = getStil({
     padding,
@@ -33,7 +34,13 @@ const Button = ({
     boxShadow,
   }) as React.CSSProperties
   return (
-    <button type={type} disabled={disabled} className="button" style={stil}>
+    <button
+      type={type}
+      disabled={disabled}
+      className="button"
+      style={stil}
+      onClick={onClick}
+    >
       {children}
     </button>
   )

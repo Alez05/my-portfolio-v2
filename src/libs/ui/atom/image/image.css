@@ -13,4 +13,6 @@
   object-position: var(--object-position);
   aspect-ratio: var(--aspect-ratio);
   border-radius: var(--border-radius);
+
+  transition: opacity 0.3s ease, filter 0.3s ease;
 }

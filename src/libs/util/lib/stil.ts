@@ -208,6 +208,9 @@ export const getStil = (
   // object-position
   const objectPosition = obiect.objectPosition ? `${obiect.objectPosition}` : ''
 
+  // object-fit
+  const objectFit = obiect.objectFit ? `${obiect.objectFit}` : ''
+
   return {
     '--padding': padding,
     '--font-size': fontSize,
@@ -248,5 +251,6 @@ export const getStil = (
     '--top': top,
     '--bottom': bottom,
     '--object-position': objectPosition,
+    '--object-fit': objectFit,
   }
 }

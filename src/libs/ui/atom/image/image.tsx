@@ -1,7 +1,7 @@
 import { getStil } from '@/libs/util'
 import { TImage } from '@/libs/type'
-import './image.css'
 import { FlexBox } from '../flexbox'
+import './image.css'
 
 export const Image = ({
   aspect = 'auto',
@@ -10,12 +10,14 @@ export const Image = ({
   alt,
   label,
   labelledBy,
-  loading,
+  loading = 'lazy',
   src,
   srcset,
   testId,
   title,
   borderRadius = '',
+  objectFit = 'cover',
+  objectPosition = 'center',
 }: TImage) => {
   const ariaLabel = label || `${alt}`
 
@@ -24,7 +26,10 @@ export const Image = ({
     height,
     aspect,
     borderRadius,
+    objectPosition,
+    objectFit,
   }) as React.CSSProperties
+
   return (
     <FlexBox padding={20} width="auto">
       <img
@@ -42,3 +47,5 @@ export const Image = ({
     </FlexBox>
   )
 }
+
+export default Image

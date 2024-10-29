@@ -3,7 +3,7 @@ import { TImage } from '@/libs/type'
 import { FlexBox } from '../flexbox'
 import './image.css'
 
-export const Image = ({
+const Image = ({
   aspect = 'auto',
   height = '',
   width = '',

@@ -7,7 +7,7 @@ export type TImage = {
   srcset?: string
   sizes?: string
   loading?: TLoading
-  src?: string
+  src?: string | undefined
   alt?: string
   label?: string
   labelledBy?: string
@@ -19,6 +19,4 @@ export type TImage = {
   borderRadius?: string
   objectFit?: 'fill' | 'contain' | 'cover' | 'none' | 'scale-down'
   objectPosition?: string
-  placeholder?: string  
-  role?: string //not sure how to use this atm
 }

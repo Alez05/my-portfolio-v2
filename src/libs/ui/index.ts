@@ -2,9 +2,10 @@
 export { default as Button } from './atom/button/button'
 export { default as FlexBox } from './atom/flexbox/flexbox'
 export { default as GridBox } from './atom/gridbox/gridbox'
+export { default as Link } from './atom/link/link'
 export { default as Icon } from './atom/icon/icon'
 export { default as Input } from './atom/input/input'
-export { Image } from './atom/image/image'
+export { default as Image } from './atom/image/image'
 export { default as Text } from './atom/text/text'
 
 // molecule components

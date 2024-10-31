@@ -1,7 +1,6 @@
 import { Layout, Maintenance } from '@/libs/ui'
 import { HeroSection, HomeHeader } from '../../organism'
 import herobox from '../../../../content/herobox.json'
-import { link } from 'fs'
 
 const HomePage = () => {
   const linksArray = [
@@ -10,12 +9,14 @@ const HomePage = () => {
       variant: 'primary',
       backgroundColor: 'var(--color-danger)',
       href: '/contact',
+      title: 'link to contact page',
     },
     {
       text: 'read more',
       variant: 'primary',
       backgroundColor: 'var(--color-dark-gray)',
       href: '/services',
+      title: 'link to services',
     },
   ]
 

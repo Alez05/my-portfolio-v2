@@ -11,16 +11,18 @@ import {
 } from '@/libs/ui'
 
 const ServicePage = () => {
-  const buttonArray = [
+  const linkArray = [
     {
-      label: 'yoooooo',
+      text: 'yoooooo',
       variant: 'primary',
       backgroundColor: 'var(--color-danger)',
+      href: '/contact',
     },
     {
-      label: 'CJ',
+      text: 'CJ',
       variant: 'primary',
       backgroundColor: 'var(--color-dark-gray)',
+      href: '/services',
     },
   ]
   return (
@@ -30,7 +32,7 @@ const ServicePage = () => {
         description="we offer you a diversity of services"
         imageUrl="/images/profile.png"
         imageAlt="man at computer"
-        buttons={buttonArray}
+        links={linkArray}
       />
 
       <GridBox gridTemplateColumns="repeat(2, 1fr)" gap={10}>

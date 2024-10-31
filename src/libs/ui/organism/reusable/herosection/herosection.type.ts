@@ -1,5 +1,5 @@
 import { TImage } from '@/libs/type'
-import { TButtonConfig } from '@/libs/ui/molecule/buttongroup/buttongroup.type'
+import { TLinkConfig } from '@/libs/ui/molecule/linkgroup/linkgroup.type'
 
 export type THeroSection = {
   title: string
@@ -7,6 +7,5 @@ export type THeroSection = {
   imageUrl: string
   imageAlt: string
   imageStyles?: TImage
-  buttons: TButtonConfig[]
-  buttonAction?: () => void
+  links?: TLinkConfig[]
 }

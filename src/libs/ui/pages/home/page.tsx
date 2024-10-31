@@ -4,17 +4,18 @@ import herobox from '../../../../content/herobox.json'
 import { link } from 'fs'
 
 const HomePage = () => {
-  const buttonArray = [
+  const linksArray = [
     {
-      label: 'contact me',
+      text: 'contact me',
       variant: 'primary',
       backgroundColor: 'var(--color-danger)',
-      link: 'https://webdevamin.com/',
+      href: '/contact',
     },
     {
-      label: 'read more',
+      text: 'read more',
       variant: 'primary',
       backgroundColor: 'var(--color-dark-gray)',
+      href: '/services',
     },
   ]
 
@@ -22,7 +23,7 @@ const HomePage = () => {
     <Layout>
       <HeroSection
         title={herobox.title}
-        buttons={buttonArray}
+        links={linksArray}
         description={herobox.description}
         imageAlt="alex profile"
         imageUrl="/images/profile.png"

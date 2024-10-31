@@ -21,6 +21,7 @@ const Link = ({
   height = '',
   cursor = 'pointer',
   boxShadow = '',
+  variant,
 }: TLink) => {
   const stil = getStil({
     padding,

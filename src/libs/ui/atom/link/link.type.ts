@@ -7,6 +7,7 @@ export type TLink = {
   label?: string
   onClick?: () => void
   // costum
+  variant?: string
   color?: string
   backgroundColor?: string
   border?: string

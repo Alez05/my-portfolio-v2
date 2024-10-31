@@ -11,6 +11,10 @@
   --gap: 0;
   --box-shadow: none;
 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
   padding: var(--padding);
   font-size: var(--font-size);
   border: var(--border);
@@ -24,11 +28,8 @@
   box-shadow: var(--box-shadow);
 
   text-decoration: none;
+}
 
-  &:hover {
-    text-decoration: underline;
-    color: red;
-  }
-
-
+.link:hover {
+  box-shadow: none;
 }

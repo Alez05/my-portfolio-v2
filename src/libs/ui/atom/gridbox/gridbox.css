@@ -1,9 +1,22 @@
 .gridbox {
   display: grid;
 
+  --grid-template-columns: unset;
+  --grid-template-rows: unset;
+  --gap: unset;
+  --justify-items: unset;
+  --align-items: unset;
+  --justify-content: unset;
+  --align-content: unset;
+  --grid-auto-flow: unset;
+  --grid-auto-columns: unset;
+  --grid-auto-rows: unset;
+  --place-items: unset;
+  --place-content: unset;
+
    /* Default values for the grid */
-  grid-template-columns: var(--grid-template-columns, 1fr);
-  grid-template-rows: var(--grid-template-rows, auto);
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-rows: var(--grid-template-rows);
   gap: var(--gap, 0);
   justify-items: var(--justify-items, stretch);
   align-items: var(--align-items, stretch);
@@ -11,11 +24,11 @@
   align-content: var(--align-content, stretch);
 
   /* Auto-flow and auto sizes */
-  grid-auto-flow: var(--grid-auto-flow, row);
-  grid-auto-columns: var(--grid-auto-columns, auto);
-  grid-auto-rows: var(--grid-auto-rows, auto);
+  grid-auto-flow: var(--grid-auto-flow);
+  grid-auto-columns: var(--grid-auto-columns);
+  grid-auto-rows: var(--grid-auto-rows);
 
   /* Optional place properties */
-  place-items: var(--place-items, unset);
-  place-content: var(--place-content, unset);
+  place-items: var(--place-items);
+  place-content: var(--place-content);
 }

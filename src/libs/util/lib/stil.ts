@@ -126,7 +126,7 @@ export const getStil = (
     } else if (typeof obiect.gridTemplateColumns === 'string') {
       return obiect.gridTemplateColumns
     }
-    return '1fr'
+    return ''
   }
 
   // grid-template-rows
@@ -136,7 +136,7 @@ export const getStil = (
     } else if (typeof obiect.gridTemplateRows === 'string') {
       return obiect.gridTemplateRows
     }
-    return 'auto'
+    return ''
   }
 
   //grid-auto-flow

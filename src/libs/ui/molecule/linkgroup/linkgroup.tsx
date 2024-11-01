@@ -27,7 +27,7 @@ const LinkGroup = ({ links }: TLinkGroup) => {
             height={link.height || '60px'}
             boxShadow={link.boxShadow || '7px 7px 0 rgb(0, 0, 0)'}
             variant={link.variant}
-            fontSize={link.fontSize || 18}
+            fontSize={link.fontSize || 16}
           >
             {link.text}
           </Link>

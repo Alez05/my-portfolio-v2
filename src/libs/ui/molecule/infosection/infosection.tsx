@@ -41,12 +41,9 @@ const InfoSection = ({
         >
           <Text as="h1">{title}</Text>
           <FlexBox alignItems="center">
-            <Text as="p">
-              {description}
-            </Text>
+            <Text as="p">{description}</Text>
           </FlexBox>
         </FlexBox>
-        <FlexBox></FlexBox>
       </FlexBox>
     </FlexBox>
   )

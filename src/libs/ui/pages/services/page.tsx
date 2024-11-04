@@ -7,8 +7,12 @@ import {
   Image,
   InfoSection,
   Layout,
+  LinkGroup,
   Maintenance,
+  TextGroup,
 } from '@/libs/ui'
+import { TTextConfig } from '../../molecule/textgroup/textgroup.type'
+import { TText } from '@/libs/type'
 
 const ServicePage = () => {
   const linkArray = [
@@ -25,6 +29,7 @@ const ServicePage = () => {
       href: '/services',
     },
   ]
+
   return (
     <Layout>
       <HeroSection
@@ -34,6 +39,31 @@ const ServicePage = () => {
         imageAlt="man at computer"
         links={linkArray}
       />
+
+      <TextGroup
+        content={[
+          {
+            content: 'This is a title',
+            as: 'h1',
+            fontSize: 40,
+            fontWeight: 700,
+          },
+          {
+            content: 'This is a subtitle',
+            as: 'h2',
+            fontSize: 24,
+            fontWeight: 600,
+          },
+          {
+            content:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam, sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. ',
+            fontSize: 18,
+            fontWeight: 400,
+            lineHeight: 1.5,
+            letterSpacing: '2px',
+          },
+        ]}
+      ></TextGroup>
 
       <GridBox gridTemplateColumns="repeat(2, 1fr)" gap={10}>
         <InfoSection

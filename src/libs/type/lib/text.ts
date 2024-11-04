@@ -13,4 +13,6 @@ export type TText = {
   title?: string
   width?: string
   height?: string
+  id?: string
+  content?: string
 }

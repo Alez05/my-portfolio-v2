@@ -9,6 +9,7 @@
   --text-overflow: ellipsis;
   --width: auto;
   --height: auto;
+  --padding: 0;
 
   margin: 0;
 
@@ -22,6 +23,7 @@
   text-overflow: var(--text-overflow);
   width: var(--width);
   height: var(--height);
+  padding: var(--padding);
 
   & visited {
     color: var(--color-primary);

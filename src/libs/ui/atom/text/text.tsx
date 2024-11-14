@@ -16,6 +16,7 @@ const Text = ({
   title,
   width = '',
   height = '',
+  padding = 0,
 }: TText) => {
   const stil = getStil({
     color,
@@ -28,6 +29,7 @@ const Text = ({
     fontWeight,
     width,
     height,
+    padding,
   }) as React.CSSProperties
 
   const Element = as

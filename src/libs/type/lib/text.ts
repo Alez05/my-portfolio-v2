@@ -15,4 +15,5 @@ export type TText = {
   height?: string
   id?: string
   content?: string
+  padding?: number | number[]
 }

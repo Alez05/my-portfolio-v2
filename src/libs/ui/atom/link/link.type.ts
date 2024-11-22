@@ -15,8 +15,10 @@ export type TLink = {
   gap?: number | number[]
   padding?: number | number[]
   fontSize?: number
+  fontWeight?: number | string
   width?: string
   height?: string
   cursor?: string
   boxShadow?: string
+  className?: string
 }

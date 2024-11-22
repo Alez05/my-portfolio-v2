@@ -27,22 +27,15 @@
   padding: 0 20px;
 }
 
-.navbar a {
-  font-size: 20px;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
+.nav-link {
   color: black;
 }
 
-.navbar a.active {
-  color: black;
+.nav-lin link:hover {
+  color: red;
 }
+
+
 
 .logo {
   position: absolute;

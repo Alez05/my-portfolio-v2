@@ -31,6 +31,7 @@ const FlexBox = ({
   margin = 0,
   bottom = '',
   top = '',
+  className,
 }: TFlexBox) => {
   const stil = getStil({
     display,

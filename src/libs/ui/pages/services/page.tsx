@@ -37,7 +37,7 @@ const ServicePage = () => {
         imageAlt="man at computer"
         links={linkArray}
       />
-      <FlexBox width="500px" height="auto" padding={40}>
+      <FlexBox width="auto" height="auto" padding={40}>
         <TextGroup
           content={[
             {

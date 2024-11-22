@@ -7,7 +7,7 @@ export type TFlexBox = {
   justifyContent?: string
   justifyItems?: string
   position?: string
-  padding?: number | number[]
+  padding?: string | number | number[]
   gap?: number | number[]
   fontSize?: number | string
   width?: string
@@ -29,4 +29,5 @@ export type TFlexBox = {
   top?: number | string
   bottom?: number | string
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+  className?: string
 }

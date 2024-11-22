@@ -10,6 +10,7 @@
   --height: none;
   --gap: 0;
   --box-shadow: none;
+  --font-weight: unset;
 
   align-items: center;
   display: flex;
@@ -26,10 +27,12 @@
   height: var(--height);
   gap: var(--gap);
   box-shadow: var(--box-shadow);
+  font-weight: var(--font-weight);
 
   text-decoration: none;
 }
 
 .link:hover {
   box-shadow: none;
+  color: red;
 }

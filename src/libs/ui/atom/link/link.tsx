@@ -21,7 +21,8 @@ const Link = ({
   height = '',
   cursor = 'pointer',
   boxShadow = '',
-  variant,
+  fontWeight = '',
+  className,
 }: TLink) => {
   const stil = getStil({
     padding,
@@ -35,6 +36,7 @@ const Link = ({
     borderRadius,
     gap,
     boxShadow,
+    fontWeight,
   }) as React.CSSProperties
 
   const isExternalLink = /^https?:\/\//.test(href)

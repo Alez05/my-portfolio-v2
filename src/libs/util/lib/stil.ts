@@ -9,11 +9,11 @@ export const toKebabCase = (property: string) =>
 export const getStil = (
   obiect: Record<string, string | number | number[] | boolean>
 ) => {
+  // console.log(Object.keys(obiect).map(toKebabCase))
+
   const paddingList = (
     Array.isArray(obiect.padding) ? obiect.padding : [obiect.padding]
   ) as number[]
-
-  // console.log(Object.keys(obiect).map(toKebabCase))
 
   // padding
   const padding = obiect.padding

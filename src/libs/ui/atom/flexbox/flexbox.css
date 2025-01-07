@@ -15,7 +15,7 @@
   --border: 0;
   --color: none;
   --background-color: none;
-  --cursor: pointer;
+  --cursor: unset;
   --float: none;
   --box-shadow: none;
   --margin: 0;

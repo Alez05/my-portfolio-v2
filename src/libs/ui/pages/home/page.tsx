@@ -1,5 +1,5 @@
 import { Layout, Maintenance } from '@/libs/ui'
-import { HeroSection, HomeHeader } from '../../organism'
+import { HeroSection, HomeHeader, Section1a } from '../../organism'
 import herobox from '../../../../content/herobox.json'
 
 const HomePage = () => {
@@ -28,6 +28,17 @@ const HomePage = () => {
         description={herobox.description}
         imageAlt="alex profile"
         imageUrl="/images/profile.png"
+      />
+      <Section1a
+        title="Alex e boss title"
+        description="alex este boss description"
+        subtitle="alex este boss subtitle"
+        linkUnu="/contact"
+        linkDoi="/services"
+        linkTextUnu="Alex e boss link 1"
+        linkTextDoi="Alex e boss link 2"
+        linkTitleUnu="Alex e boss link title 1"
+        linkTitleDoi="Alex e boss link title 2"
       />
     </Layout>
   )

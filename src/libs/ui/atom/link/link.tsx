@@ -46,7 +46,7 @@ const Link = ({
   return (
     <a
       href={href}
-      className="link"
+      className={`link ${className || ''}`}
       style={stil}
       aria-label={label}
       rel={adjustedRel}

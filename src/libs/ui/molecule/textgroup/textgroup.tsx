@@ -10,7 +10,6 @@ const TextGroup = ({ content, children }: TTextConfig) => {
       flexDirection="column"
       gap={20}
       padding={20}
-      boxShadow="0 0 10px 0 rgba(0, 0, 0, 0.1)"
     >
       {textArray.map((textItem, index) => (
         <FlexBox key={textItem.id || index} as="div" margin={10} padding={5}>

@@ -34,6 +34,7 @@ const ClientNav = ({ navLinks = [] }: TNavProps) => {
             padding={10}
             fontWeight="bold"
             aria-current={currentPath === link.path ? 'page' : undefined}
+            className="nav-link"
           >
             {link.name}
           </Link>

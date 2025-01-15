@@ -1,4 +1,5 @@
 export type TText = {
+  className?: string
   children?: React.ReactNode
   color?: string
   fontSize?: number

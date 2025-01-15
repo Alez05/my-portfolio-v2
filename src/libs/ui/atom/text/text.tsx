@@ -17,6 +17,7 @@ const Text = ({
   width = '',
   height = '',
   padding = 0,
+  className,
 }: TText) => {
   const stil = getStil({
     color,
@@ -35,7 +36,12 @@ const Text = ({
   const Element = as
 
   return (
-    <Element className="text" style={stil} title={title} href={href}>
+    <Element
+      className={`text ${className}`}
+      style={stil}
+      title={title}
+      href={href}
+    >
       {children}
     </Element>
   )

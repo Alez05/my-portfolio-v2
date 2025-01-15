@@ -19,4 +19,5 @@ export type TImage = {
   borderRadius?: string
   objectFit?: 'fill' | 'contain' | 'cover' | 'none' | 'scale-down'
   objectPosition?: string
+  className?: string
 }

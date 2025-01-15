@@ -21,6 +21,7 @@
   --margin: 0;
   --top: unset;
   --bottom: unset;
+  --overflow: unset;
 
   display: flex;
   align-items: var(--align-items);
@@ -45,4 +46,5 @@
   margin: var(--margin);
   top: var(--top);
   bottom: var(--bottom);
+  overflow: var(--overflow);
 }

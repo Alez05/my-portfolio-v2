@@ -18,6 +18,7 @@ const Image = ({
   borderRadius = '',
   objectFit = 'cover',
   objectPosition = 'center',
+  className,
 }: TImage) => {
   const ariaLabel = label || `${alt}`
 
@@ -33,7 +34,7 @@ const Image = ({
   return (
     <FlexBox padding={20} width="auto">
       <img
-        className="image"
+        className={`image ${className}`}
         style={stil}
         alt={alt}
         aria-label={ariaLabel}

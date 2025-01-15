@@ -1,4 +1,3 @@
-import { TLink } from './../ui/atom/link/link.type'
 // map and lists
 export { aspectList } from './lib/aspect'
 export { iconList } from './lib/icon'

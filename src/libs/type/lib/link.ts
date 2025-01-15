@@ -5,7 +5,7 @@ export type TLink = {
   rel?: string
   title?: string
   label?: string
-  onClick?: () => void
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
   // costum
   color?: string
   border?: string
@@ -17,4 +17,7 @@ export type TLink = {
   height?: string
   cursor?: string
   boxShadow?: string
+  className?: string
+  backgroundColor?: string
+  fontWeight?: number | string
 }

@@ -1,5 +1,5 @@
 import { getStil } from '@/libs/util'
-import { TLink } from './link.type'
+import { TLink } from '@/libs/type'
 import './link.css'
 
 const Link = ({
@@ -43,16 +43,18 @@ const Link = ({
   const adjustedRel =
     target === '_blank' && isExternalLink ? 'noopener noreferrer' : rel
 
+  const merged = className ? `link ${className}` : 'link'
+
   return (
     <a
       href={href}
-      className={`link ${className || ''}`}
+      className={merged}
       style={stil}
       aria-label={label}
       rel={adjustedRel}
       target={target}
       title={title}
-      onClick={onClick}
+      onClick={typeof onClick === 'function' ? onClick : undefined}
     >
       {children}
     </a>

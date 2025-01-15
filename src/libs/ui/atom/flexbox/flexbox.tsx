@@ -62,7 +62,7 @@ const FlexBox = ({
     top,
   }) as React.CSSProperties
   return (
-    <Element style={stil} className="flexbox">
+    <Element style={stil} className={`flexbox ${className}`}>
       {children}
     </Element>
   )

@@ -1,5 +1,5 @@
 import { Layout, Maintenance } from '@/libs/ui'
-import { HeroSection, HomeHeader, Section1a } from '../../organism'
+import { Carousel, HeroSection, HomeHeader, Section1a } from '../../organism'
 import herobox from '../../../../content/herobox.json'
 
 const HomePage = () => {
@@ -40,6 +40,7 @@ const HomePage = () => {
         linkTitleUnu="Alex e boss link title 1"
         linkTitleDoi="Alex e boss link title 2"
       />
+      <Carousel />
     </Layout>
   )
 }
